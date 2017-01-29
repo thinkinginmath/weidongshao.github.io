@@ -1,0 +1,23 @@
+
+#header-left {
+     position: absolute;
+     top: 0%;
+     left: 0%;
+}
+
+#header-right  {
+     position: absolute;
+     top: 0%;
+     right: 0%;
+}
+#footer-left {
+     position: absolute;
+     bottom: 0%;
+     left: 0%;
+}
+img.profile {
+background:none; border:none; box-shadow:none;
+}
+code.emacs {
+ color: green;
+}
