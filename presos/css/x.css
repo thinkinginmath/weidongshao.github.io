@@ -16,8 +16,11 @@
      left: 0%;
 }
 img.profile {
-background:none; border:none; box-shadow:none;
+  background:none; border:none; box-shadow:none;
 }
 code.emacs {
  color: green;
+}
+p.f-tiny {
+  font-size: 9pt;
 }
