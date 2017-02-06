@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Center Robotics</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+			<link rel="stylesheet" href="css/theme/serif.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Animation -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id='title'>
+					<h3 font-family: serif>Data Center Robotics</h1>
+					<p>Weidong Shao</p>
+				</section>
+				<section>
+					<h2>Objective</h2>
+					<ul>
+					<li class="fragment">Provide unattended Data Center Operations</li>
+					<li class="fragment">Reduce necessity of human access to the physical lab</li>
+					<li class="fragment">Remotely controlled robots to perform easy fixes</li>
+					<li class="fragment">Remote physical fault detection</li>
+				</ul>
+			</section>
+
+			<section>
+					<h3>Current Difficulties</h3>
+					<ul>
+						<li class="fragment">Some operations in data centers are time-consuming</li>
+						<li class="fragment">Excessive human operations in lab are more error-prone</li>
+						<li class="fragment">No fast hardware issue detection</li>
+					</ul>
+			</section>
+
+			<section>
+					<h3>Data center drone</h3>
+					<img src="images/drone.png" class="fragment" width="40%">
+					<ul>
+						<li class="fragment">Flying robot that can fly to each check point setup by operation team</li>
+						<li class="fragment">Robot can roam in the data center to check on rack server status</li>
+					</ul>
+			</section>
+
+			<section>
+				<h3>Feature I: Server Status</h3>
+				<img src="images/server-led.png" class="fragment" width="40%">
+				<ul>
+<li>Real-time video view of rack, server back and front panels</li>
+					<li class="fragment">With proper training, robot will be smart enough to understand the LED screen of rack servers</li>
+					<li class="fragment">The status of servers will be reported to the lab admin</li>
+
+				</ul>
+			</section>
+
+			<section>
+				<h3>Feature II: Network Device Status</h3>
+				<img src="images/switch-light.png" class="fragment" width="40%">
+				<ul>
+					<li class="fragment">Robot can learn if a device is a networking device and take pictures of the back</li>
+					<li class="fragment">Image will be processed and information will be retrieved and analyzed</li>
+					<li class="fragment">Networking status will be reported to the lab/networking admin</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Feature III: Remote Control</h3>
+				<img src="images/remote-control.png" class="fragment" width="30%">
+				<ul>
+					<li class="fragment">Lab admins and operators can also use the remote control to check on the data center</li>
+				</ul>
+				<img src="images/overview.png" class="fragment" width="50%">
+
+
+			</section>
+
+<section><h3>Feature IV: Other</h3></seciton>
+				<ul>
+<li>Collect thermal information for all racks and draw a heat map. Data can be used for server and network performance analytics </li>
+<li class="fragment">Use robot to reset servers</li>
+					<li class="fragment">Use robot for inventory tracking (RFID)</li>
+					<li class="fragment">Use robot to check cooling system status</li
+<li>Next-gen server and smart racks should allow swap of units, or hard-disks etc through robots</li>>
+				</ul>
+			</section>
+
+
+			<section>
+				<h1>Questions?</h1>
+Email: weidong.shao@huawei.com <br>
+w00754682
+			</section>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
