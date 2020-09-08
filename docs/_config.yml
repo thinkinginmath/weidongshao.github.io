@@ -26,7 +26,7 @@ github_username:  weidongshao
 
 # Build settings
 markdown: kramdown
-theme: minimal
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
