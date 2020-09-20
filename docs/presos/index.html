@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SW-dev-cloud</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/compass.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+<section>
+<h2>Software Development and Services with Cloud</h2>
+<h3>A Cost-Saving Perspective</h3>
+Weidong Shao<br>
+December 12, 2016
+</section>
+
+<section>
+<h3>Why is the topic important?</h3></section>
+
+<section>
+<h3>Every business is a software business</h3>
+<p>Software is the core of the ICT tranformation.</p>
+</section>
+
+<section>
+<h2>De-emphasize Local Workstation</h3>
+
+<section>
+<h3 class="fragment">Browser-based IDE - develop from anywhere</h3>
+<p class="fragment">e.g, Cloud9 <a href="https://c9.io/">https://c9.io</a></p>
+</section>
+
+
+
+<section>
+<img src="img/cloud9.png">
+</section>
+
+<section>
+<h3>Distributed Build - fast and efficient</h3>
+</section>
+
+<section>
+<h3>Code search - re-use other code, including open source</h3>
+</section>
+
+<section>
+<p class="fragment">Cloud based virtual desktop, build, unit test and regression test,
+ no need of software installation and maintenance for each individual software developer</p>
+
+
+</section>
+
+
+
+</section>
+
+<section>
+<h3>De-emphasize Local Workstation</h3>
+<ul>
+<li>Save engineers' time </li>
+<li>Improved productivity</li>
+</ul></section>
+
+<section>
+<h3>CI/CD</h3>
+
+<ul>
+<li>Code review - Gerrit</li>
+<li>With hooks for unit tests, and regression test</li>
+<li>Testing jobs scheduled and run on cloud</li>
+<li>Software packaging upon successful tests</li>
+</ul>
+</section>
+
+
+<section>
+<h3>CI/CD</h3>
+<ul>
+<li>build, unit test and regression test running on cloud</li> 
+<li>save developer time drastically (by parallelization) and reduce hardware resource usage (by sharing)</li>
+</ul>
+</section>
+
+<section>
+<h3>Case Study - ElectricCloud</h3>
+
+<img src="img/electric-cloud-logo.png"/>
+<p class="img/fragment">Used by Huawei</p>
+</section>
+
+<section>
+<h3>Case Study - ElectricFlow</h3>
+<ul>
+<li>DevOps release automation</li>
+<li>Fully customized piplelines</li>
+<li>Flexiable configuration of procedures, commands, and plugins</li>
+<li>Cloud-based application servers for CI and CD</li>
+<li><a href="http://electric-cloud.com/products/electricflow/">http://electric-cloud.com/products/electricflow</a></li>
+</ul>
+</section>
+<section>
+<h3>Stuby library - gRPC</h3>
+
+<section>
+<ul>
+<li>Google RPC: Websocket over HTTP protocols.</li>
+<li>Works across languages and platforms.</li>
+<li>Scales to millions of RPCs easily provided by this platform.</li>
+
+<li><a href="http://www.grpc.io/">http://www.grpc.io/</a> </li>
+</ul>
+</section>
+
+<section>
+<ul>
+<li>Built-in HTTP service on every server.</li>
+<li>Simple app management and monitoring through http server</li>
+</ul>
+</section>
+
+<section>
+<ul>
+<li>Bi-directional streaming with http/2 based transport</li>
+<li>Used by many companies as their sole streaming service.</li>
+</ul>
+</section>
+</section>
+
+<section>
+<h3>X As A Service</h3>
+<ul>
+<li>Cloud based common services for development and testing</li>
+<li>Each service  maintained separately, providing better scalability and lower costs for maintaining individual services for different teams</li>
+</ul>
+</section>
+<section>
+<h3>X As A Service - Examples</h3>
+
+<ul><li>RDB: hosted MySQL</li>
+<li>BigTable: Hosted services for each project for every data center</li>
+<li>GFS/CNS: Centralized FS. Disable access to filesystem on each server, easy to manage when service failures occur.</li>
+</ul>
+</section>
+
+
+<section><h3>X As A Service - Benefits</h3>
+<ul>
+<li>Rapid prototyping and app launch - reduce TTM</li>
+<li>Reduce operational cost - pooled resources</li>
+<li>Better performace - by domain-specific experts</li>
+<li>cloud based file system provides high availability and failover (by encoding such as Reed–Solomon error correction)</li>
+</ul>
+</section>
+
+<section><h3>gRPC and Common Services Benefits</h3>
+<h4>gRPC and common services make high availablity, high scalibity and high performance software design much easier.</h4>
+</section>
+
+
+<section>
+
+<h3>Decouple Software From Hardware</h3>
+<ul>
+<li>No special hardware-dependent code, making it more portable.</li>
+<li>Unified platform and infrastructure with unified API, making it easier to manage.</li>
+<li>Lower cost in operation when there’s no need to maintain hardware-specific code.</li>
+</ul>
+</section>
+
+<section>
+<h3>Decouple Software From Hardware</h3>
+<ul>
+<li>Example: Google Borg, the internal container management system</li>
+
+<li>Borg manages the resource pool so that server utilitization is greatly increased.</li>
+<li>Significantly reduce CapEx and OpEx (esp. in large scale operation)</li>
+</ul>
+</section>
+<section>
+<h3>Decouple Software From Hardware</h3>
+<ul>
+<li>some small portition of code that needs high performance hardware  can be deployed on the dedicated central-managed hardwares</li>
+<ul>
+<li> using rpc to communicate to components.</li>
+<li>CPU with AVX2 capability,</li>
+<li> GPU</li>
+<li>TPU (for google machine learning tensor framework https://en.wikipedia.org/wiki/Tensor_processing_unit))</li>
+
+</ul>
+</section>
+
+<section>
+<h3>Decouple Application from Infrastructure</h3>
+<ul>
+<li>Application level SREs don’t need to know the details of Borg internals.</li>
+<li>This type of platform-infrastructure design drives the software engineers to write programs in a better way.</li>
+<li>New design for H/A, Load Balancing, Data Persistence and so on.</li>
+<li>Natural need for microservice architecture</li>
+
+</ul>
+</section>
+
+<section><h3>What Can We Do?</h3>
+
+<section><h3 class="fragment">Embrace Containers</h3>
+<ul>
+<li class="fragment">Encapsulate application environment, abstracting aways details of hardware and OS.</li>
+<li class="fragment">Management APIs shift to application - more efficient deployment and operations</li>
+</ul>
+</section>
+
+<section><h3>Improve CI/CD</h3>
+<ul>
+<li>ElectricFlow</li>
+<li>Reference: OpenStack Infra</li>
+</ul>
+</section>
+
+<section>
+<img src="img/os-3rd.jpg">
+</section>
+
+<section><h3>Move your services to HWS</h3>
+<ul>
+<li>Rethink the business model of products and solutions</li>
+<li>Re-architect products and solutions</li>
+</ul>
+</section>
+
+<section>
+<img src="img/hws.jpg">
+</section>
+
+<section>
+<img src="img/top10.png">
+</section>
+
+
+</section>
+<section><h3>Sample Application</h3>
+<img src="img/sample-app-0.png"/>
+</section>
+<section><h3>Sample Application</h3>
+<img src="img/sample-app-1.png"/>
+</section>
+
+<section><h3>Thank You</h3>
+
+
+<p>https://weidongshao.github.io/cost-savings-workshop/</p>
+</section>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+                                background: "#ff0000",
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+
+</html>
