@@ -7,7 +7,7 @@
 
 # Site settings
 title: David Wei Shao
-brief-intro: Technologist
+brief-intro: misc notes
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://weidongshao.github.io" # the base hostname & protocol for your site
 
