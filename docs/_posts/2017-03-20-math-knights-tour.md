@@ -11,7 +11,7 @@ tags:
   - Hamiltonian path
   - Hamiltonian cycle
 author: David Wei Shao
-
+mathjax: true
 ---
 
 * content
@@ -41,11 +41,34 @@ The second run has a better luck, stuck at the  50th step.
 
 ## Warnsdorff's Rule
 
-Warnsdorff's rule is a heuristic for finding a single knight's tour. The knight is moved so that it always proceeds to the square from which the knight will have the fewest onward moves. It is an example of greedy algorithm.
+Warnsdorff's rule is a heuristic for finding a single knight's tour. The knight is moved so that it always proceeds to the square from which the knight will have the fewest onward moves. It is an example of greedy algorithms, which are chacterized by making a sequence of locally optimum decisions.
 
 We get the following result from this algorithm.
 
 <img src="/assets/2017/full_knights_sol.png" width="300"/><img src="/assets/2017/full_knights_trace.png" width="300"/>
+
+
+### Does the rule always work?
+Note, however, Warnsdorff's rule may not always work. It depends on the starting position, and depends on the size of chess-board (or grid graph) if we expand the problem to other $$m\times n$$ dimensions. 
+
+For example, on the $$8\times 8$$ checkboard, the following run follows the rule at each step but it fails to find the full Hamiltonian path. Note: in the implementation of the rule, if there are multiple cells with the same fewest exits, choose one at random.
+
+
+<img src="/assets/2017/failed_steps.png" width="300"/><img src="/assets/2017/failed_trace.png" width="300"/>
+
+{:.image-caption}
+*Example of a failed run of Warnsdorff's Rule: stuck at the 60th step*
+
+### Anti-Warnsdorff's Rule
+
+What if we take an opposite approach: always choose a move with maxmium exits?
+We did some experiements and it turns out that it could work up to 50+ steps. The following picture shows one of these runs.
+
+<img src="/assets/2017/anti_steps.png" width="300"/><img src="/assets/2017/anti_trace.png" width="300"/>
+
+{:.image-caption}
+*Example of Anti-Warnsdorff's Rule: stuck at the 50th step*
+
 
 ## Earliest Hamilton Path and Cycle
 
@@ -82,4 +105,7 @@ var steps = [
     [7,1],[5,0],[6,2],[7,0],[5,1],[4,3],[3,1],[1,2],
     [0,0]];
 ```
+
+For more information on this subject, check out the wiki page on
+[Knight's tour](https://en.wikipedia.org/wiki/Knight%27s_tour)
 
