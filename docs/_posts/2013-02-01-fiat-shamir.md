@@ -17,7 +17,7 @@ mathjax: true
 In cryptography, the Fiat–Shamir heuristic is a technique for taking an interactive proof of knowledge and creating a digital signature based on it.
 
 The concept behind it is simple: If you have an interactive proof protocol (e.g, for user identification), the verifier plays an important role in the process by providing a random challenge to the prover.
-With  the Fiat–Shamir heuristic, we  turn this protocol into a digital signature scheme by replacing the prover's random challenge with some hash value that can be derived from the message. The hash function is modeled as a random oracle.
+With  the Fiat–Shamir heuristic, we  turn this protocol into a digital signature scheme by replacing the verifier's random challenge with some hash value that can be derived from the message. The hash function is modeled as a random oracle.
 
 
 

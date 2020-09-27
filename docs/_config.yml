@@ -59,3 +59,4 @@ paginate: 10
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
