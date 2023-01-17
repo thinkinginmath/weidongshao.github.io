@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Schnorr and ElGamal Signature</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/x.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+<section>
+<h3>Schnorr and ElGamal Signature</h3>
+
+</section>
+<section>
+
+\[\begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned} \]
+
+</section>
+
+
+<section>
+
+<font color="blue">How to calculate repeating decimal? </font>
+  
+\[ x = 0.\overline{145} = 0.145 145 145 \cdots \]
+
+<p></p>
+
+<font color="blue">How to evaluate continued fraction? 
+</font>
+
+
+  \[\frac{1}{3+ \frac{1}{3+ \frac{1}{3+ \frac{1}{\cdots} }}}\]
+  </section>
+<section>
+
+
+
+
+
+
+  <h3>How to Solve Problems?</h3>
+
+<p>
+<ol>
+<li class="fragment">
+Understand the problem</li>
+<li class="fragment">Pick a plan or strategy</li>
+<li class="fragment">Carry out or execute the plan</li>
+<li class="fragment">Check the answer</li>
+
+</ul>
+</p>
+</section>
+<section><h3>Common Strategies</h3>
+<table>
+<tr><td>
+<ul>
+<li>Find a pattern</li>
+<li>Draw a picture</li>
+<li>Make an organized list</li>
+</ul>
+</td>
+<td>
+<ul><li>Make a table</li>
+<li>Work backwards</li>
+<li>Use reasoning</li>
+</ul>
+</td></tr>
+</table>
+</p>
+
+<p class="fragment"><font color="blue">It is important to show the steps of your work instead of only writing down an answer.</font></p>
+</section>
+
+<section>What is a cube?</section>
+<section>
+<img class="plain" style="float: right,top" src="images-cube/Rubik_cube_scrambled.png" width="300">
+
+<img src="images-cube/cubeparts.gif" class="plain">
+<p>6 square faces, 8 vertices, 12 edges</p>
+</section>
+
+<section>
+
+  <div id="wrapper">
+  <div class="viewport">
+    <div class="cube">
+      <div class="side">
+        <div class="cube-image">1</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">2</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">3</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">4</div>
+      </div>
+      <div class="side">
+        <div class="cube-image">5</div>
+      </div>
+      <div class="side">
+        <div class="cube-image active">6</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+
+
+
+<section>
+<h4>Let's build blocks using 1-cm cubes</h4>
+<img src="images-cube/fig048.png" class="plain">
+
+</section>
+
+
+<section>
+<img class="plain" src="images-cube/img1.png" class="plain">
+</section>
+
+<section>
+<h3>Problem 1</h3>
+How many 1-cm cubes are needed to build a cube with an edge of 5-cm? 
+</section>
+
+<section>
+<h3>Cube with 5-cm Edge</h3>
+
+<img src="images-cube/img2.png" class="plain">
+
+<ul>
+
+<li class="fragment">A 5-cm edge 5 cubes</li>
+<li class="fragment">1 layer of 5 cube tall:  5x5=25 cubes</li>
+<li class="fragment">final cube: 5 such layers, 5x25=125 cubes</li>
+</section>
+
+<section>
+
+<h3>Problem 2</h3>
+How many 1-cm cubes are needed to build a rectangular box that is 2 cm high, 3 cm wide and 1cm deep?
+
+<img src="images-cube/cube321.png" class="plain fragment">
+<p class="fragment">#  of cubes = Length * Width * Depth = 2x3x1 = 6</p>
+
+</section>
+
+<section>
+<h3>Painted Cubes</h3>
+<img class="plain" src="images-cube/cube4x3x2.png">
+<p>When you paint a cube that is bigger than 1x1x1,<br> do the inside faces get painted?</p>
+</section>
+
+<section>
+
+
+
+<p>Here is a 2x2x2 cube. If I paint it red, how many faces have red paint?
+</p>
+
+<img src="images-cube/cube2x2.png" class="plain">
+
+<p class="fragment">3 sides of each cube get paint so 3X8 = 24 faces have paint
+</p>
+<p class="fragment"># of cubes that have three sides painted in red: 8
+</p>
+
+</section>
+
+<section>
+<table>
+<tr><td width="60%">A wooden cube that measures 3 cm along each edge is painted green. 
+ The painted cube is then cut into 1-cm cubes</td>
+<td width="40%"><br>
+ <img src="images-cube/cube-3x3.png" class="plain"></td></tr>
+</table>
+<ol>
+<li>How many of 1-cm cubes do not have greenpaint on any face?</li>
+<li>How many of 1-cm cubes that only have 1 face painted green?</li>
+</ol>
+</section>
+
+<section>
+ <img src="images-cube/cube-3x3.png" class="plain">
+<p>How many of 1-cm cubes do not have red paint on any face?</p>
+<p class="fragment answer">
+Only the 1-cm cube in the middle is not colored.  Hence the answer is 1.</p>
+
+</section>
+<section>
+<img src="images-cube/paint-in-green.png" class="plain">
+<p class="fragment">
+How many of 1-cm cubes that only have 1 face painted green?</p>
+
+<p class="fragment answer">
+Look at the faces of 3-cm cube.  The middle 1-cm cube of each face has just one green face.  There are 6 faces of the 3-cm cube.  Hence 6 1-cm cubes have green paint on just 1 face.
+</p>
+
+</section>
+<section>Towers</section>
+
+<section>
+
+<ul>
+<li>Tower problems will have a pattern associated with them that you will need to determine</li>
+<li>In a tower there will always be a cube under one except for the top and bottom layers.</li>
+</ul>
+
+</section>
+
+
+<section>
+How many cubes are needed to build this tower?
+
+<img src="images-cube/tower-1.png" class="plain"><br>
+</section>
+
+<section>
+
+<table><tr><tr><td>
+
+<ul><li class="fragment">Top layer has 1 cube</li>
+<li class="fragment">The layer below has one cube beneath and 4 around it total 5</li>
+<li class="fragment">Third layer has 5 cubes below these and 4 new ones so total 9</li>
+</ul></td>
+<td>
+<img src="images-cube/tower-1.png" class="plain"><br></td>
+</td></tr></table>
+</section>
+
+
+<section>
+
+<table><tr><tr><td>
+
+<ul>
+<li class="fragment">The pattern is each row below has 4 more cubes than the row above.</li>
+<li class="fragment">1 + 5 + 9 + 13 + 17+ 21 = 66 cubes in six layers</li>
+</ul></td>
+<td>
+<img src="images-cube/tower-1.png" class="plain"><br></td>
+</td></tr></table>
+</section>
+
+<section>
+<p>A tower is constructed similar to the tower below. However, this tower has a base of 7 cubes. The new one has a base of 21 cubes. How many cubes in total?</p>
+
+<img src="images-cube/tower7.png" class="plain">
+
+</section>
+
+<section>
+<img src="images-cube/table-10.png" width="640" class="plain">
+</section>
+
+<section>
+<p>A builder is building a staircase similar to the one shown in the picture but he is building it 10 steps high and the base is 3 steps wide. Each building block is one cube. How many cubes does he need?</p>
+
+<img src="images-cube/stair-2.png" width="400" class="plain">
+
+</section>
+
+
+<section>
+<table>
+<tr>
+<td><img src="images-cube/stair-2.png" width="400" class="plain"></td>
+<td><img src="images-cube/table-02.png" width="460" class="plain"></td></tr></table>
+</section>
+
+<section>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/sQ3FSFOEpLo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</section>
+
+<section>
+<h3>View This Online</h3>
+
+<a href="https://weidongshao.github.io/presos/cubes.html">https://weidongshao.github.io/presos/cubes.html</a>
+
+<a href="https://weidongshao.github.io/pdfs/math_cubes_homework.pdf">https://weidongshao.github.io/pdfs/math_cubes_homework.pdf</a>
+
+YouTube Video Link
+<a href="https://youtu.be/sQ3FSFOEpLo">https://youtu.be/sQ3FSFOEpLo</a>
+
+WeidongShao @ Gmail
+</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/cube.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+		  Reveal.initialize({
+		      transition: 'linear',
+		      
+		      math: {
+			  // mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+			  config: 'TeX-AMS_HTML-full'
+		      },
+
+		      dependencies: [
+			  { src: 'lib/js/classList.js' },
+			  { src: 'plugin/math/math.js', async: true },
+			  
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+
+
+				]
+			});
+		</script>
+	</body>
+</html>

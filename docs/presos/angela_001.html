@@ -1,0 +1,1740 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Inifi </title>
+
+		<link rel="stylesheet" href="/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="/reveal.js/dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="/reveal.js/plugin/highlight/monokai.css">
+		<style>
+		  .colored {
+		      color: #ba4a00;
+		  }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+		    <section data-transition="fade-in fade-out">
+		      <h1>Find</h1>
+		      
+		<h3>      <font color="#ea0a8e">the shortest distance</font> from $A$ to $B$</h3>
+<img src="images/IMGA_mirrors-1.png" width="960">
+
+<h3>that  touches $x$-axis and $y$-axis </h3>
+
+			
+		      </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">the shortest distance</font><br> from $A$ to $B$</h2>
+
+		      <p class="fragment">A straight line is the shortest distance between two points.
+		</p>	
+
+		      <p class="fragment">
+
+			<video data-autoplay src="images/AToB.mp4" width="1080">
+		      </p>
+		      
+		    </section>
+
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">Triangle Inequality</font></h2>
+		      <p>	      From the wiki page</p>
+
+		      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/TriangleInequality.svg/440px-TriangleInequality.svg.png" width="600">
+</section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">
+			  Heron's Shortest Distance Problem</font>
+	</h2>	
+	<p>		  
+			  Given two points $A$ and $B$ on one side of a line, <br>find $C$ a point on the straight line, that minimizes
+			  \[AC+BC\]
+	</p>
+
+		      <p class="fragment">
+
+<img src="images/IMGA_abc_line.jpeg" width="960">
+		      </p>
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">
+			  Euclid's Law of Reflection</font>
+	</h2>	
+	<p>		  
+	  The angle of incidence is always equal to the angle of reflection.
+
+	</p>
+
+		      <p class="fragment">
+
+<img src="images/IMGA_reflection-1.jpeg" width="960">
+		      </p>
+		    </section>
+
+		    		    		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">
+			  Heron's Shortest Distance Problem</font>
+	</h2>	
+	<p>		  
+			  Given two points $A$ and $B$ on one side of a line, <br>find $C$ a point on the straight line, that minimizes
+			  \[AC+BC\]
+	</p>
+
+		      <p >
+
+<img src="images/IMGA_abmin-1.jpeg" width="980">
+		      </p>
+		    </section>
+
+
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">
+			  Heron's Shortest Distance Problem</font>
+	</h2>	
+	<p>		  
+			  Given two points $A$ and $B$ on one side of a line, <br>find $C$ a point on the straight line, that minimizes
+			  \[AC+BC\]
+	</p>
+
+		      <p>
+
+<img src="images/IMGA_abmin-0.jpeg" width="960">
+		      </p>
+		    </section>
+
+
+		    		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">
+			  Heron's Shortest Distance Problem</font>
+	</h2>	
+	<p>		  
+			  Given two points $A$ and $B$ on one side of a line, <br>find $C$ a point on the straight line, that minimizes
+			  \[AC+BC\]
+	</p>
+
+		      <p >
+
+<img src="images/IMGA_abmin-2.jpeg" width="700">
+		      </p>
+		      <h3>      <font color="#ea0a8e">$C$ is the intersection of $BA'$. </font></h3>
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">Numerical Experiement</font></h2>
+		      <p>\[ \min (AC+CB) = \sqrt{(7-1)^2 + (3+2)^2} =\sqrt{61} = \approx 7.8102\]
+		      
+		      <p><video data-autoplay src="images/DrawLine001.mp4" width="1200">
+		      </p>
+		      
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">Proof - Conceptual</font></h2>
+
+		      
+		      <p><video data-autoplay src="images/DrawLine.mp4" width="1200">
+		      </p>
+		      <p class="fragment">\[AC = A'C\]</p>
+		      <p class="fragment">\[AC+BC \ge  A'B\]</p>
+		      
+		    </section>
+
+		    
+
+		    		    <section data-transition="fade-in fade-out">
+		      <h1>Find</h1>
+		      
+		<h3>      <font color="#ea0a8e">the shortest distance</font> from $A$ to $B$</h3>
+<img src="images/IMGA_mirrors-1.png" width="960">
+
+<h3>that  touches $x$-axis and $y$-axis </h3>
+
+			
+		      </section>
+
+				    
+
+				    		    <section data-transition="fade-in fade-out">
+		      <h2>      <font color="#ea0a8e">Answer</font></h2>
+
+		      
+		      <p><video data-autoplay src="images/DrawLine2.mp4" width="1200">
+		      </p>
+		      
+		    </section>
+
+
+				    
+		    			    <section class="center">
+					      
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ea0a8e">Like, Share, and Subscribe!</font></h2>
+</section>		    				    
+						    
+		    <section data-transition="fade-in fade-out">
+		      <h3> Start the new year with<br>
+			<font color="#ba4a00">2023 Number Challenges</font></h3>
+
+		      <img src="images/IMG_2023-suggest.jpeg" width="700">
+		      <h2>Please suggest your questions!</h2>
+		      </section>
+		    
+		    <section data-transition="fade-in fade-out">
+
+$$8193151^2 - 2023\times 182160^2 = 1$$
+$$33165873224^2 - 2023\times 737383635^2 = 1$$
+$$134255446617601^2 - 2023\times 2984928772320^2 = 1$$
+$$543466014742175624^2 - 2023\times 12082990932967725^2 = 1$$
+$$2199950293420880308351^2 - 2023\times 48911944311724578480^2 = 1$$
+		    </section>
+		    		    <section class="center" data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+				      <h1>Solve</h1>
+
+				      <h2><font color="#ba4a00">\[\sqrt{x}+\sqrt{y} = \sqrt{2023}\]</font> </h2>
+</section>
+	    		    <section  data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+				      <h3><font color="#ba4a00">\[\sqrt{x}+\sqrt{y} = \sqrt{2023}\]</font> </h3>
+				      <h3 class="fragment">
+					\[\sqrt{x} =  \sqrt{2023}-\sqrt{y}\] </h3>
+	
+			    </section>
+			    <section  data-transition="fade-in fade-out">
+			      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+			      <h3><font color="#ba4a00">\[\sqrt{x}+\sqrt{y} = \sqrt{2023}\]</font> </h3>
+			      <h3>
+					\[\sqrt{x} =  17\sqrt{7}-\sqrt{y}\] </h3>
+				      <h3 class="fragment">
+					\[ x =  2023 - 34\sqrt{7y}+y\] </h3>
+				      <h3 class="fragment">
+					\[	7|y, y=7m^2\]
+					<h3 class="fragment">
+					  Use similar arguments, $7|x, x=7n^2$
+					  
+			    </section>
+			    			    <section  data-transition="fade-in fade-out">
+			      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+			      <h3><font color="#ba4a00">\[\sqrt{x}+\sqrt{y} = \sqrt{2023}\]</font> </h3>
+			      <h3> \[x=7m^2, y=7n^2\]</h3>
+
+				      <h3 class="fragment">
+					\[ \sqrt{7}m +\sqrt{7}n = 17\sqrt{7}\] </h3>
+				      <h3 class="fragment">
+					\[ m +n = 17\] </h3>
+				      <h3 class="fragment">
+					\[ x = 7m^2, y = 7(17-m)^2 \] </h3>
+				      <h3 class="fragment">
+					for $m = 0, 1, \cdots, 17$ </h3>
+
+					  
+						    </section>
+						    			    			    <section  data-transition="fade-in fade-out">
+			      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+			      <h3><font color="#ba4a00">\[\sqrt{x}+\sqrt{y} = \sqrt{2023}\]</font> </h3>
+	
+
+
+			      <h3 >
+					\[ x = 7m^2, y = 7(17-m)^2 \] </h3>
+				      <h3>
+					for $m = 0, 1, \cdots, 17$ </h3>
+
+					  
+</section>
+
+
+		    			    <section class="center">
+					     
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ba4a00">Like, Share, and Subscribe!</font></h2>
+</section>		    				    
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+				      <h1>Find</h1>
+				      <h3> all Pythagorean triples that contain 2023
+				      <font color="#ba4a00">\[a^2+b^2=2023^2\]</font> </h3>
+				    or
+				      <h3>				    <font color="#ba4a00">\[a^2+2023^2=c^2\]</font> </h3>
+				    </section>
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Pythagorean Triple</font></h3>
+				      Three positive integers $(a, b, c) $, such that
+
+				      \[a^2 + b^2 = c^2\]
+				      <p class="fragment">$(3, 4, 5), (6, 8, 10), (5, 12, 13)$</p>
+				      <h3 class="fragment"> <font color="#ba4a00">Primitive Pythagorean Triple</font></h3>				      <p class="fragment">$(3, 4, 5), (5, 12, 13)$</p>
+<p class="fragment">$(8, 15, 17),	(7, 24, 25), (20, 21, 29)$</p>
+				      
+				    </section>
+				    
+		    		    <section data-transition="fade-in fade-out">
+				      <h2> <font color="#ba4a00">Primitive Pythagorean Triple</font></h2>
+The primitive Pythagorean Triple is given by
+				      \[ x=2mn, y=m^2 −n^2, z=m^2 +n^2\]
+with $m \gt n$ coprime integers, not both odd.
+				      
+				    </section>
+				    
+
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+				      <h1>Find</h1>
+				      <h3> all Pythagorean triples that contain 2023
+				      <font color="#ba4a00">\[a^2+b^2=2023^2\]</font> </h3>
+				    or
+				      <h3>				    <font color="#ba4a00">\[a^2+2023^2=c^2\]</font> </h3>
+				    </section>
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">$a^2+b^2=2023^2$</font></h3>
+
+				      \[ x=2mn, y=m^2 −n^2, z=m^2 +n^2\]
+with $m \gt n$ coprime integers, not both odd.
+
+				      <p class="fragment"> $m^2+n^2 = 2023$</p>
+				      
+				    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2>		      <font color="#ba4a00">
+Diophantine Equation
+
+			  \[x^2+y^2 = n\]
+			  </font></h2>
+			<hr>
+			
+			<h4 class="fragment">
+			  \[x^2\equiv 0, 1 \mod 4\]
+			  \[y^2\equiv 0, 1 \mod 4\]
+
+			</h4>
+			<h4 class="fragment">
+			  \[x^2+y^2\equiv 0, 1,2 \mod 4\]</h3>
+			<hr>
+			<h3 class="fragment">
+			  <font color="#ba4a00">
+			    $x^2+y^2 =n $, no solutions <br>if
+			    $n \equiv 3 \mod 4$</font></h3>			
+		    </section>
+
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">$a^2+b^2=2023^2$</font></h3>
+
+				      \[ x=2mn, y=m^2 −n^2, z=m^2 +n^2\]
+with $m \gt n$ coprime integers, not both odd.
+
+				      <p> $m^2+n^2 = 2023$, <span class="fragment">no solutions</span></p>
+				      <p class="fragment"> non-primitive triples? </p>
+				      <p class="fragment"> \[ 2023=7\cdot 17^2\]      </p>
+				      <p class="fragment"> \[ 7\equiv 3\mod 4, 17\equiv 1\mod 4\]     
+				       \[ 17^2=289\equiv 1\mod 4\]      </p>
+
+				      
+				    </section>
+
+
+				    		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">$a^2+b^2=2023^2$</font></h3>
+
+				      \[ x=2mn, y=m^2 −n^2, z=m^2 +n^2\]
+with $m \gt n$ coprime integers, not both odd.
+
+				      <p> $m^2+n^2 = 2023$, no primitive solutions</p>
+				      <p class="fragment"> \[ 17 = 4^2 + 1^2\]</p>
+				      <p class="fragment"> $ m=4, n=1,$ <font color="#ba4a00">$ (8, 15, 17)$</font></p>
+					
+				      <p class="fragment"> \[ 289 = 15^2 + 8^2\]
+				      <p class="fragment"> $ m=15, n=8,$ <font color="#ba4a00">$ (240, 161, 289)$ </font></p>
+
+				      <p class="fragment"> Two solutions<br>
+					
+					<font color="#ba4a00">$ (8, 15, 17)$ <span class="fragment">$\Rightarrow (952,1785, 2023)$</span> </font><br>
+					<font color="#ba4a00">$ (240,161,289) $  <span class="fragment">$\Rightarrow (1680, 1127, 2023)$ </span></font>
+				      </p>
+				      
+
+				      
+				    </section>				    
+
+
+				    		    		    <section data-transition="fade-in fade-out">
+								      <h3> <font color="#ba4a00">$a^2+2023^2 = c^2$</font></h3>
+								      <p class="fragment">$(7\times 17^2)^2=(c^2-a^2)=(c+a)(c-a)$</p>
+								      <p class="fragment">
+$(2046264, 2023, 2046265), (292320, 2023, 292327)$<br>
+$(120360, 2023, 120377), (41736, 2023, 41785)$<br>
+$(17136, 2023, 17255),  (6936, 2023, 7225)$<br>
+$(2040, 2023, 2873)$
+</p>
+
+</section>
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equations</font></h3>
+				      <h1>Find</h1>
+				      <h3> all Pythagorean triples that contain 2023
+				      <font color="#ba4a00">\[a^2+b^2=2023^2\]</font> </h3>
+				    or
+				      <h3>				    <font color="#ba4a00">\[a^2+2023^2=c^2\]</font> </h3>
+				    </section>
+
+		    		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Summary</font></h3>
+				      <h3> all Pythagorean triples that contain 2023</h3>
+				      <hr>
+				      <p class="fragment">
+					$(952,1785,$<font color="#ba4a00"> $2023$</font>$), (1680, 1127, $<font color="#ba4a00">$2023$</font>$)$ </p>				      
+				      <p class="fragment">
+$(2046264, $<font color="#ba4a00">$2023$</font>$, 2046265), (292320, $<font color="#ba4a00">$2023$</font>$, 292327)$<br>
+$(120360, $<font color="#ba4a00">$2023$</font>$, 120377), (41736, $<font color="#ba4a00">$2023$</font>$, 41785)$<br>
+$(17136, $<font color="#ba4a00">$2023$</font>$, 17255),  (6936, $<font color="#ba4a00">$2023$</font>$, 7225)$<br>
+$(2040, $<font color="#ba4a00">$2023$</font>$, 2873)$
+</p>
+				    
+</section>
+		    <section class="center"  data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Diophantine Equation</font></h3>
+				      
+				      <h1>Find</h1>
+				      <h3> integer solutions for
+				      <font color="#ba4a00">\[\frac{1}{x}+\frac{1}{y} = \frac{5}{2023}\]</font> </h3>
+		    </section>
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">Diophantine Equation</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  \[\frac{1}{x}+\frac{1}{y} = \frac{5}{2023}\]</font> </p>
+		      <p class="fragment">\[ \frac{x+y}{xy} = \frac{5}{2023}\]</p>
+		      <p class="fragment">\[ 5xy = 2023(x+y)\]</p>
+		      <p class="fragment">\[ 5xy -2023(x+y) = 0\]</p>
+		      <p class="fragment">			<font color="#ba4a00">\[ 5\cdot 5xy -5\cdot 2023(x+y) = 0\]</font></p>
+		      <p class="fragment">\[ (5x -2023)(5y-2023) = 2023^2\]</p>
+
+		    </section>
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">Diophantine Equation</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  \[\frac{1}{x}+\frac{1}{y} = \frac{5}{2023}\]</font> </p>
+		      <p>\[ (5x -2023)(5y-2023) = 2023^2\]</p>
+		      <p class="fragment">\[ 5x-2023\equiv 2 \pmod 5\]</p>
+		      <p class="fragment">\[ 5y-2023\equiv 2 \pmod 5\]</p>
+		      <p class="fragment">\[ 2023^2 = 7^2\cdot 17^4 = m\cdot n\]</p>
+		      <p class="fragment"><font color="#ba4a00">\[7\equiv 2\pmod 5, 17 \equiv 2 \pmod 5\]</font></p>
+
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">$\mod 5$ Analysis</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  if $a\equiv 2\pmod 5$, then</font> </p>
+
+		      <p class="fragment">\[ a^2 \equiv 4\pmod 5\]
+\[ a^3 \equiv 3\pmod 5\]
+\[ a^4 \equiv 1\pmod 5\]
+\[ a^5 \equiv 2\pmod 5\]
+		    </p></section>
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">$\mod 5$ Analysis</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  if $a\equiv 2\pmod 5$, then</font> </p>
+
+		      <p>\[ a^2 \equiv 4\pmod 5\]
+\[ a^3 \equiv 3\pmod 5\]
+\[ a^4 \equiv 1\pmod 5\]
+			<font color="#ba4a00">\[ a^5 \equiv 2\pmod 5\]</font>
+		      </p>
+
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">Diophantine Equation</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  \[\frac{1}{x}+\frac{1}{y} = \frac{5}{2023}\]</font> </p>
+		      <p>\[ (5x -2023)(5y-2023) = 2023^2\]</p>
+		      <p class="fragment">\[ 5x-2023\equiv 2 \pmod 5\]</p>
+		      <p class="fragment">\[ 5y-2023\equiv 2 \pmod 5\]</p>
+		      <p class="fragment">\[ 2023^2 = 7\cdot 7 \cdot 17 \cdot 17  \cdot 17  \cdot 17 \]</p>
+		      <p class="fragment"><font color="#ba4a00">Consider $x\lt y$ first, </font></p>
+		      <p class="fragment"><font color="#ba4a00">$5x-2023=7$ or $5x-2023 = 17$</font></p>
+		      <p class="fragment"><font color="#ba4a00">$x=406, y=117334$ or $x= 408, 48552$</font></p>
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">Diophantine Equation</font></h3>
+				      
+		      <p>
+			<font color="#ba4a00">
+			  \[\frac{1}{x}+\frac{1}{y} = \frac{5}{2023}\]</font> </p>
+		      <p class="fragment">
+			\[ (406, 1173343), \]
+			\[ (1173343, 406), \]
+			\[ (408, 48852), \]
+			\[ (48852, 408)\]
+			</p>
+		    </section>
+
+		    			    <section class="center">
+					      
+
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ba4a00">Like, Share, and Subscribe!</font></h2>
+</section>		    		    
+
+		    <section data-transition="fade-in fade-out">
+		      <h3> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h3> 
+		      </section>
+					    
+
+
+
+		    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h3>
+				      <hr>
+				      <h2><font color="#ba4a00">\[\frac{1}{n}\]</font> </h2>
+
+				      <h2>Period length of pure recurring decimals</h2>
+
+				      <p style="overflow-wrap:anywhere"> <font color="#ba4a00">$\frac{1}{109} = $ 0.(00917431192660550458715596330275
+			22935779816513761467889908256880
+			73394495412844036697247706422018348623853211)</font></p>
+
+	      <p style="overflow-wrap:anywhere"> <font color="#ba4a00">
+	      \[ \frac{1}{137} = 0.(00729927)\]</font></p>
+
+
+				    </section>		    
+
+		    		    <section data-transition="fade-in fade-out">
+<h2> <font color="#ba4a00">Review </font></h2>
+\[\frac{m}{n}, \gcd(m,n)=1, 0\lt m\lt n\]
+<ol>
+  <li class="fragment">Terminating (finite)  decimal, if and only if $n$ only has 2 or 5 prime factors.
+  <li class="fragment"> pure recurring decimal if and only if $\gcd(n, 10) = 1$</li>
+  <li class="fragment"> mixed recurring decimal, otherwise</li>
+</ol>
+				    </section>
+				    
+				    <section data-transition="fade-in fade-out">
+				      <h3> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h3>
+								      <hr>
+				      <h2><font color="#ba4a00">Some Examples</font> </h2>
+		      <img src="images/IMG_p_length_1.png" width="1280">
+		      </section>
+
+
+
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      
+		      <h3>When will the decimal first repeat?</h3>		      
+		      <h3 class="fragment">
+			<font color="#ba4a00">\[\frac{1}{37} = 0.027 027 027 \cdots\]</font>
+		      </h3>
+		      
+
+		    </section>
+
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      <p><img src="images/IMG_37-1.jpeg" width="800"></p>
+		    </section>
+
+
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      <p><img src="images/IMG_37-2.jpeg" width="800"></p>
+		    </section>
+
+
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      <p><img src="images/IMG_37-3.jpeg" width="800"></p>
+		    </section>
+
+
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      <p><img src="images/IMG_37-4.jpeg" width="800"></p>
+		      <p class="fragment">
+			$\frac{1}{n}$: decimal digit will repeat when the remainder is $1$
+		      </p>
+		      <p class="fragment">
+		$1000 = 37\cdot 27 + 1$
+		      </p>
+
+		      <p class="fragment">
+			$10^3 \equiv 1 \mod 37$
+		      </p>
+		      
+		    </section>
+
+
+				    
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      
+		      <h3>When will the decimal first repeat?</h3>		      
+		      <p>
+			<font color="#ba4a00">\[\frac{1}{37} = 0.027 027 027 \cdots\]</font>
+		      </p>
+		      <p class="fragment">
+			$10^3 \equiv 1 \mod 37$
+		      </p>
+		    </section>
+
+				    
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      
+		      <h3>When will the decimal first repeat?</h3>		      
+		      <p>
+			<font color="#ba4a00">\[\frac{1}{n} = ?\]</font>
+		      </p>
+
+		      <p class="fragment">
+			Find smallest $k$ such that:
+			<br>$10^k \equiv 1 \mod n$
+		      </p>
+		      
+
+		    </section>
+
+
+
+		    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Euler's Theorem </font> </h2>
+		      A generalization of Fermat's little theorem:
+
+		      if $\gcd(a, n)=1$, then
+		      \[a^{\varphi (n)} \equiv 1 \pmod n \]
+
+		      where  $\varphi(n)$ denotes <font color="#ba4a00">Euler's totient function</font>,  which counts the integers from<br> 1 to $n$ that are coprime to $n$.
+<hr>
+		      <p class="fragment">
+			Since $\gcd(n, 10) = 1$, then $ 10^{\varphi(n)} \equiv 1 \pmod n$
+		      </p>
+		      
+
+
+		      
+		      
+		    </section>
+
+		    		    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">$\varphi(n)$ for prime numbers</font> </h2>
+		      <p class="fragment">for prime $p$, $\varphi(p) = p-1$</p>
+		      <p class="fragment">for prime $p$, $\varphi(p^r) = p^{r}-\frac{p^{r}}{p} = p^{r-1}(p-1)$</p>
+
+		      <p class="fragment">$\varphi(7) = 6$</p>
+		      <p class="fragment">$\varphi(17) = 16$</p>
+		      <p class="fragment">$\varphi(17^2) = 17\cdot 16 = 272$</p>
+
+		      </p>
+		 
+		    </section>
+
+
+
+<section data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00">$\varphi(n)$ </font> </h2>
+  <p> $n=p_1^{r_1}p_2^{r_2} \cdots p_k^{r_k}$</p>
+
+  <p class="fragment">$\varphi(n) = n(1-\frac{1}{p_1})(1-\frac{1}{p_2})\cdots (1-\frac{1}{p_k})$
+  </p>
+		      <p class="fragment">$n = 21=3\cdot 7$</p>
+
+  <p class="fragment">$\varphi(21) = 21(1-\frac{1}{3})(1-\frac{1}{7}) = 12$</p>
+
+		    </section>
+
+
+
+				    
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      
+		      <h3>When will the decimal first repeat?</h3>		      
+		      <p>
+			<font color="#ba4a00">\[\frac{1}{n} = ?\]</font>
+		      </p>
+
+		      <p class="fragment">
+			Find smallest $k$ such that:
+			<br>$10^k \equiv 1 \mod n$
+		      </p>
+		      
+		      <p class="fragment">
+
+			$10^{\varphi(n)} \equiv 1 \mod n$
+		      </p>
+
+		      <p class="fragment">
+			$k\le \varphi(n)$
+		      </p>
+
+		    </section>
+
+
+				    				    
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Prove $k|\varphi(n)$</font></h4>
+		      
+
+		      <p class="fragment">
+			Recurring decimal period $k$, is the smallest $k$ such that:
+			<br>$10^k \equiv 1 \mod n$
+		      </p>
+		      
+		      <p class="fragment">
+
+			$10^{\varphi(n)} \equiv 1 \mod n$
+		      </p>
+
+		      <p class="fragment">
+			$k\le \varphi(n)$, and $k|\varphi(n)$
+		      </p>
+		      <hr class="fragment">
+
+		      <p class="fragment">
+			Proof by contradiction
+		      </p>
+		      
+		      <p class="fragment">
+If not, then			$\varphi(n)= kq+r$, where $0\lt r \lt k$
+		      </p>
+		      <p class="fragment">
+			$10^{\varphi(n)}=10^{ kq+r} = (10^k)^q\cdot 10^r$
+		      </p>
+		      <p class="fragment">
+			$10^{\varphi(n)} \equiv (10^k)^q\cdot 10^r \mod n$
+		      </p>
+
+		      <p class="fragment">
+			$10^{r} \equiv 1  \mod n$
+		      </p>
+		      <p class="fragment">
+			A contradition with the fact that $k$ is the smallest integer for<br>
+			$10^{r} \equiv 1  \mod n$
+		      </p>
+
+
+		    </section>
+
+
+
+
+
+	    
+				    <section data-transition="fade-in fade-out">
+		      <h4> <font color="#ba4a00">Decimals for Fractions. Part 4</font></h4>
+<hr>
+		      
+		      <h3>When will the decimal first repeat?</h3>		      
+		      <p>
+			<font color="#ba4a00">\[\frac{1}{n} = ?\]</font>
+		      </p>
+
+		      <p class="fragment">
+			It is the smallest $k$ such that:
+			<br>$10^k \equiv 1 \mod n$
+		      </p>
+
+
+		      <p class="fragment">
+			$k| \varphi(n)$
+		      </p>
+
+		    </section>
+
+				    <section data-transition="fade-in fade-out">
+				      <h2><font color="#ba4a00">Revisit the Examples</font> </h2>
+				      <img src="images/IMG_phi_79.jpg" width="1280">
+		      </section>				      
+
+<section data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00">$\frac{1}{79}$</font> </h2>
+  \[\varphi(79) = 78\]
+  <p class="fragment">Factors $1, 2, 3, 6, 13, 26, 39, 78$
+  <p class="fragment"> $10^1\equiv 10 \mod 79$</p>
+  <p class="fragment"> $10^2\equiv 21 \mod 79$</p>
+  <p class="fragment"> $10^3\equiv 52 \mod 79$</p>
+  <p class="fragment"> $10^6\equiv 18 \mod 79$</p>
+  <p class="fragment"> $10^{13}\equiv 1 \mod 79$</p>
+
+  <p class="fragment"> \[
+    \frac{1}{79} =0.(0126582278481) \]
+
+</section>				      
+				    				    
+<section data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00">$\frac{1}{2023}$</font> </h2>
+\[\varphi(2023) = 2023 (1-\frac{1}{7})(1-\frac{1}{17}) = 1632\]
+
+<p class="fragment">
+$10^{4} \equiv  1908 \mod 2023, 10^{6} \equiv  638 \mod 2023$ <br>
+$10^{8} \equiv  1087 \mod 2023, 10^{12} \equiv  421 \mod 2023$ <br>
+$10^{16} \equiv  137 \mod 2023, 10^{17} \equiv  1370 \mod 2023$ <br>
+$10^{24} \equiv  1240 \mod 2023, 10^{32} \equiv  562 \mod 2023$ <br>
+$10^{34} \equiv  1579 \mod 2023, 10^{48} \equiv  120 \mod 2023$ <br>
+$10^{51} \equiv  643 \mod 2023,10^{68} \equiv  905 \mod 2023$ <br>
+$10^{96} \equiv  239 \mod 2023,10^{102} \equiv  757 \mod 2023$  <br>
+$10^{136} \equiv  1733 \mod 2023,10^{204} \equiv  540 \mod 2023$ <br>
+$10^{272} \equiv  1157 \mod 2023,10^{408} \equiv  288 \mod 2023$ <br>
+$10^{544} \equiv  1446 \mod 2023,10^{816} \equiv  1 \mod 2023$
+</p>
+<p class="fragment"><font color="#ba4a00"> $k = 816$</font></p>
+</section>				      
+				   
+				    
+
+			
+	    
+
+
+<section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">if $\gcd(n, 10)=1$</font></h2>
+		      We can show, 		      for some $k$,
+		      \[n|\underbrace{99\cdots 9}_{k}\]
+		      <p class="fragment">which is equivalent to
+\[ n| (10^k -1)\]
+		      </p>
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Euler's Theorem </font> </h2>
+		      A generalization of Fermat's little theorem:
+
+		      if $\gcd(a, n)=1$, then
+		      \[a^{\varphi (n)} \equiv 1 \pmod n \]
+
+		      where  $\varphi(n)$ denotes Euler's totient function,  which counts the integers from<br> 1 to $n$ that are coprime to $n$.
+<hr>
+		      <p class="fragment">
+			Since $\gcd(n, 10) = 1$, then $ 10^{\varphi(n)} \equiv 1 \pmod n$
+		      </p>
+		      
+		      <p class="fragment">
+			for some $m'$, $ 10^{\varphi(n)} -1 = n\cdot m'$
+		      </p>
+		      <p class="fragment">
+
+			\[\frac{m}{n} = \frac{m\cdot m'}{10^{\varphi(n)} -1} \]
+		      </p>
+		      <p class="fragment">
+
+			\[\frac{m}{n} = 0.(d_1 d_2 \cdots d_l) \]
+		      </p>		      
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">if  $\frac{m}{n} = 0.(d_1 d_2 \cdots d_k) $</font></h2>
+
+		      		      <p class="fragment">
+
+					\[\frac{m}{n} = \frac{ m'}{10^{k} -1} \]
+		      </p>
+		      <p class="fragment">
+			\[ nm' = m (10^k -1)\]
+		      </p>
+		      <p class="fragment">
+		      since $\gcd(m,n)=1$, $n|10^k-1$ </p>
+		      <p class="fragment">
+			$2\nmid 10^k-1, 5\nmid 10^k-1$
+</p>		      <p class="fragment">
+		so 	$\gcd(n, 10)=1$
+		      </p>
+		    </section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00"> what if  $\gcd(n, 10) \gt 1$</font></h2>
+		      
+		      <p class="fragment">$n=2^s5^t n'$, for $s, t$ not both 0, and
+			<br>$n'\gt 1$, $\gcd(n', 10)=1$
+
+	      <p class="fragment">
+		For example, $\frac{1}{2^3\cdot 5\cdot 13}$
+</p>	      <p class="fragment">
+		\[ \frac{1}{2^3\cdot 5 \cdot 13} = \frac{5^2}{10^3 \cdot  13}\]
+</p>
+
+	      <p class="fragment">
+	      \[ \frac{1}{2^3\cdot 5 \cdot 13} = \frac{1}{10^3}\cdot \frac{5^2}{  13}\]
+</p>
+
+</section>			
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00"> what if  $\gcd(n, 10) \gt 1$</font></h2>
+		      
+		      <p class="fragment">$n=2^s5^t n'$, for $s, t$ not both 0, and
+			<br>$n'\gt 1$, $\gcd(n', 10)=1$
+
+
+		      <p class="fragment">
+		\[ \frac{m}{n} = \frac{1}{10^k} \cdot \frac{2^{k-s} 5^{k-t}}{n'} = \frac{1}{10^k} \cdot \frac{m'}{n'} \]
+</p>
+			
+		      <p class="fragment">
+			where $ m'  =2^{k-s} 5^{k-t} \lt 10^k $, $k=\max(s, t)$
+		      </p>		      <p class="fragment">
+			but $ m'$ could be bigger than $n'$.
+		      </p>
+		      <p class="fragment">
+			\[ \frac{m'}{n'} = w.(d_1d_2\cdots d_l) \]
+		      </p>
+		      <p class="fragment">
+		      	\[ \frac{m}{n} = \frac{1}{10^k}\cdot \frac{m'}{n'}=0.t_1t_2 \cdots t_u(d_1d_2\cdots d_l)  \]
+		    </section>
+
+		    
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00"> An Example: $\frac{1}{56}$ </font></h2>
+		      
+
+		      <p class="fragment">
+			\[ 56 = 2^3 \cdot 7 \]
+		\[ \frac{m}{n} = \frac{1}{10^k} \cdot \frac{2^{k-s} 5^{k-t}}{n'} = \frac{1}{10^k} \cdot \frac{m'}{n'} \]
+		      </p>
+		      <p class="fragment">
+			\[ \frac{1}{2^3\cdot 7} = \frac{1}{10^3} \cdot \frac{ 5^3}{7} = \frac{1}{10^3} \cdot \frac{125}{7} \]
+		      </p>
+	      <p class="fragment">
+		\[ \frac{m'}{n'} = 17\frac{6}{7} =  17.(857142) \]
+	      </p>
+	      <p class="fragment">
+		\[ \frac{1}{56} = \frac{1}{10^3} \times 17.(857142) = 0.017(857142) \]
+		      </p>		      
+		    </section>
+
+		    		    <section data-transition="fade-in fade-out">
+<h2> <font color="#ba4a00"> Summary </font></h2>
+\[\frac{m}{n}, \gcd(m,n)=1, 0\lt m\lt n\]
+<ol>
+  <li class="fragment">Terminating (finite)  decimal, if and only if $n$ only has 2 or 5 prime factors.
+  <li class="fragment"> pure recurring decimal if and only if $\gcd(n, 10) = 1$</li>
+  <li class="fragment"> mixed recurring decimal, otherwise</li>
+</ol>
+				    </section>
+
+
+		    		    <section data-transition="fade-in fade-out">
+<h2> <font color="#ba4a00"> What's Next? </font></h2>
+\[\frac{m}{n}, \gcd(m,n)=1, 0\lt m\lt n\]
+
+<h2 class="fragment">What is the length of the period?</h2>
+
+	      <p class="fragment" style="overflow-wrap:anywhere"> <font color="#ba4a00">$\frac{1}{109} = $ 0.(00917431192660550458715596330275
+			22935779816513761467889908256880
+			73394495412844036697247706422018348623853211)</font></p>
+
+	      <p class="fragment" style="overflow-wrap:anywhere"> <font color="#ba4a00">
+	      \[ \frac{1}{137} = 0.(00729927)\]</font></p>
+
+
+				    </section>		    
+		    <section data-transition="fade-in fade-out">
+		      <h3>If $\frac{1}{n}$ has pure recurring decimal</h3>
+		      <font color="#ba4a00">\[\frac{1}{n} = 0.(d_1d_2 \cdots d_k)\]
+			and<br>
+			$k=n-1$,		      </font></h3>
+		      <h1>Prove</h1>
+		      <h2><font color="#ba4a00">$p$ is prime </font> </h2>
+
+		    </section>
+
+
+		    			    <section class="center">
+					      
+
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ba4a00">Like, Share, and Subscribe!</font></h2>
+</section>		    
+
+
+		    <section data-transition="fade-in fade-out">
+
+		      
+		      <h2>&nbsp;</h2>
+		      <h1>Prove</h1>
+		      <h2><font color="#ba4a00">$2023\bigg| \underbrace{11\cdots 1}_k$</font> </h2>
+		      for some $k$.
+
+		      <h2>&nbsp;</h2>
+
+
+		    </section>
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">Decimals for fractions. Part 2</font></h2>
+		      
+		      <h2>&nbsp;</h2>
+		      <h2> mixed recurring decimal,</h2>
+		      <h2> pure recurring decimal,</h2>
+		      <p  style="overflow-wrap:anywhere"> <font color="#ba4a00">$\frac{1}{109} = $ 0.(00917431192660550458715596330275
+			22935779816513761467889908256880
+			73394495412844036697247706422018348623853211)</font></p>
+		      and
+		      <h2> sum of geometric sequences</h2>
+</section>
+
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">Summary</font></h2>
+
+		    
+
+
+		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">Sum of Inifinite Geometric Series</font></h2>
+		      If $|r|\lt 1$, then
+		      \[S = \sum_{k=0}^\infty ar^k =  \frac{a}{1-r}\]
+
+		      
+</section>
+		      		    <section data-transition="fade-in fade-out">
+		      <h2> <font color="#ba4a00">Decimals for fractions. Part 2</font></h2>
+
+		    
+		      
+		      <h2>&nbsp;</h2>
+		      <h2>If $\frac{1}{n}$ is mixed recurring decimal,</h2>
+		    
+
+		      <h1>Prove</h1>
+		      <h2><font color="#ba4a00">$n=2^s5^tp$ <br>for some $s, t\in \mathbb{N}$</font> </h3>
+</section>
+<section data-transition="fade-in fade-out">
+  <h2> <font color="#ba4a00">Finite Decimal Representation</font></h2>
+
+  <p class="fragment">$\frac{1}{128} = 0.0078125$</p>
+  <p class="fragment">$\frac{1}{3125} = 0.00032$</p>
+  <p class="fragment">$\frac{1}{625} = 0.0016$</p>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2> <font color="#ba4a00">Finite Decimal Representation</font></h2>
+		      
+  \[\frac{1}{n} = 0.d_1d_2\cdots d_k\]
+  where $k$ is a positive integer, $d_i$'s are digits 0-9. $d_k\neq 0$.
+
+  <p class="fragment">
+  \[\frac{1}{n} = \frac{\overline{d_1d_2\cdots d_k}}{10^k} = \frac{m}{10^k}\]
+  </p>
+    <p class="fragment">
+      \[n \cdot m  =10^k = 2^k5^k\]
+    </p>
+      <p class="fragment">
+	$n = 2^s5^t$ for integers $s, t \ge 0$
+  </p>
+</section>
+
+
+<section data-transition="fade-in fade-out">
+  <h2> <font color="#ba4a00">Finite Decimal Representation</font></h2>
+		      
+  \[\frac{m}{n} = 0.d_1d_2\cdots d_k\]
+  where $m\lt n$, $(m,n)=1$,
+  <br>$k$ is a positive integer, $d_i$'s are digits 0-9. $d_k\neq 0$.
+
+  <p class="fragment">
+  \[\frac{m}{n} = \frac{\overline{d_1d_2\cdots d_k}}{10^k} = \frac{m'}{10^k}\]
+  </p>
+    <p class="fragment">
+      \[n \cdot m'  =10^km = 2^k5^k m\]
+    </p>
+
+  <p class="fragment">
+    <font color="#ba4a00">Theorem: if $(m,n)=1, n|mt$, then $n|t$</font>
+
+  </p>
+    
+      <p class="fragment">
+	$n|2^k5^k$, so $n = 2^s5^t$ for integers $s, t \ge 0$
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2> <font color="#ba4a00">Non-terminating Decimal for Fraction?</font></h2>
+
+      <p class="fragment">
+	$\frac{1}{31} = 0.(032258064516129)$
+      </p>
+      
+  <p class="fragment">
+    $\frac{1}{37} = 0.(027)$
+      </p>
+  <p class="fragment">
+    $\frac{1}{49} = 0.(020408163265306122448979591836734693877551)$
+      </p>
+ <h2>&nbsp;</h2>
+  <p class="fragment"> <font color="#ba4a00">
+    We will look at the period length in next video!</font>
+      </p>
+      
+  
+</section>
+
+
+		    <section class="center" data-transition="fade-in fade-out">
+		      <h1>Repeating Decimal</h1>
+
+		      <h3><font color="#ba4a00">\[\frac{1}{2023} = 0.\]</font> </h3>
+		      <p style="overflow-wrap:anywhere">(000494315373208106772120612951062778052397429560059317844784972812654473554127533366287691547207118141374196737518536826495304003954522985664854176964903608502224419179436480474542758279782501235788433020266930301532377656945130993573900148294611962432031636183885318833415719228868017795353435491843796342066238260009886307464162135442412259021255561047948591201186356895699456253089471082550667325753830944142362827483934750370736529906080079090459713297083539298072170044488383588729609490855165595650024715768660405338606030647553138902619871478002965892239248640632723677706376668314384577360355907068709836875926841324765200197726149283242708848245180425111220958971824023727137913989125061789421651013346515076618882847256549678695007414730598121601581809194265941670785961443400889767671774592189817103311913)</p>
+
+		    </section>
+
+		    
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h1><font color="#ba4a00">Prove</font></h1>
+		      <h3>$\forall n\in \mathbb{N}+, \exists n$ consecutive positive integers<br> none of which is
+			<font color="#ba4a00"><em>an integral power of a prime number</em></font>. </h3>
+		      <h3 class="fragment"><font color="#ba4a00">$36=6^2$ vs $125=5^3$</font></h3>
+		    </section>
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Chinese Remainder Theorem</font></h2>
+With <font color="#ba4a00"><em>pairwise coprime</em></font> positive integers $n_1, n_2, \ldots, n_k$, 
+ and arbitrary integers $a_1, a_2, \ldots, a_k$,  <br> the system of congruences
+
+		      \[
+\begin{aligned} x &\equiv a_1 \pmod{n_1}\\ x &\equiv a_2 \pmod{n_2}\\ & \vdots\\ x &\equiv a_k \pmod{n_k} \end{aligned} \]
+ 
+has a solution, and the solution is unique modulo $N = n_1n_2\cdots n_k$ 
+
+		    </section>
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00">Chinese Remainder Theorem</font></h2>
+		    <img src="https://pic2.zhimg.com/80/v2-77ea0e0aa8a6542442a5296ac7a66255_1440w.webp" width="450">
+		    </section>
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00">Chinese Remainder Theorem</font></h2>
+
+		    	      \[
+  \begin{aligned} x &\equiv 2 \pmod{3}\\ x &\equiv 3 \pmod{5}\\   x &\equiv  2 \pmod{7} \end{aligned} \]
+  
+    <h3 class="fragment"><font color="#ba4a00">$\boxed{x=23+105m}$</font></h3>
+		    </section>
+
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Chinese Remainder Theorem</font></h2>
+With <font color="#ba4a00"><em>pairwise coprime</em></font> positive integers $n_1, n_2, \ldots, n_k$, 
+ and arbitrary integers $a_1, a_2, \ldots, a_k$,  <br> the system of congruences
+
+		      \[
+\begin{aligned} x &\equiv a_1 \pmod{n_1}\\ x &\equiv a_2 \pmod{n_2}\\ & \vdots\\ x &\equiv a_k \pmod{n_k} \end{aligned} \]
+ 
+has a solution, and the solution is unique modulo $N = n_1n_2\cdots n_k$ 
+
+		    </section>
+		    
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h1><font color="#ba4a00">Prove</font></h1>
+		      <h3>$\forall n\in \mathbb{N}+, \exists n$ consecutive positive integers<br> none of which is
+			<font color="#ba4a00"><em>an integral power of a prime number</em></font>. </h3>
+
+		    </section>
+
+
+
+		    	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Chinese Remainder Theorem</font></h2>
+		      Pick  <font color="#ba4a00">$2n$ <em>distinct primes</em></font> $p_1, p_2, \ldots, p_n$, and
+		      $q_1, q_2, \ldots, q_n$, 
+
+
+		      \[
+\begin{aligned} x &\equiv -1 \pmod{p_1q_1}\\ x &\equiv -2 \pmod{p_2q_2}\\ & \vdots\\ x &\equiv -n \pmod{p_nq_n} \end{aligned} \]
+
+
+		      <p class="fragment">$x+1, x+2, \cdots, x+n$ each contains two distinct prime factors</p>
+		      <h3 class="fragment"> <font color="#ba4a00">none is an integral power of a prime number</font></h2>
+		    </section>
+		    
+		    
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h1><font color="#ba4a00">Prove</font></h1>
+		      <h3>$\forall n\in \mathbb{N}+, \exists n$ consecutive positive integers<br> none of which is
+			<font color="#ba4a00"><em>an integral power of a prime number</em></font>. </h3>
+
+		    </section>
+
+
+		    			    <section class="center">
+					      
+
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ba4a00">Like, Share, and Subscribe!</font></h2>
+</section>		    
+		    
+		    
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h1>Guess and Check?</h1>
+<h2>Deriving</h2>
+		      <h3><font color="#ba4a00">\[1^3+2^3+ \cdots +n^3 = \frac{n^2(n+1)^2}{4}\]</font> </h3>
+
+		    </section>
+
+		    
+
+		    
+		    	      	    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Intuitively</font></h2>
+
+		      <h3 class="fragment">
+			\[1+2+ \cdots +n = \frac{n(n+1)}{2}\]</font> </h3>
+
+		      <h3 class="fragment">
+			\[1^2+2^2+ \cdots +n^2 = \frac{n(n+1)(2n+1)}{6}\]</font> </h3>
+
+		      <h3 class="fragment">
+			\[1^3+2^3+ \cdots +n^3 = An^4+Bn^3+Cn^2+Dn+E\]</font> </h3>
+
+		    </section>
+
+
+		    	      	    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">5 Unknowns</font></h2>
+
+		      <h3><font color="#ba4a00">
+			\[1^3+2^3+ \cdots +n^3 = An^4+Bn^3+Cn^2+Dn+E\]</font> </h3>
+		      <p>\[\begin{align*}
+			1& =& A +B +C +D+E \\
+			9&=& 16A +8B +4C +2D+E\\
+			36&=& 81A +27B +9C +3D+E\\
+			100&=& 256A +64B +16C +4D+E\\
+			225&=& 625A +125B +25C +5D+E
+			\end{align*}\]
+		      </p>
+		      <p class="fragment"><font color="#ba4a00">
+			  \[A=0.25, B=0.5, C=0.25, D=E=0\]
+
+		      </font></p>
+		      		      <h3 class="fragment"><font color="#ba4a00">
+			  \[1^3+2^3+ \cdots +n^3 = \frac{1}{4}(n^4+2n^3+n^2)\]</font> </h3>
+		    </section>
+
+
+		    	      	    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">5 Unknowns</font></h2>
+
+		      <h3><font color="#ba4a00">
+			\[1^3+2^3+ \cdots +n^3 = An^4+Bn^3+Cn^2+Dn+E\]</font> </h3>
+		      <p>\[\begin{align*}
+			1& =& A +B +C +D+E \\
+			9&=& 16A +8B +4C +2D+E\\
+			36&=& 81A +27B +9C +3D+E\\
+			100&=& 256A +64B +16C +4D+E\\
+			225&=& 625A +125B +25C +5D+E
+			\end{align*}\]
+		      </p>
+		      <p><font color="#ba4a00">
+			  \[A=0.25, B=0.5, C=0.25, D=E=0\]
+
+		      </font></p>
+		      <h3><font color="#ba4a00">
+			  \[1^3+2^3+ \cdots +n^3 = \frac{n^2(n+1)^2}{4}\]</font> </h3>
+		    </section>
+
+
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+		    
+		      
+		      <h2>		      <font color="#ba4a00">
+Prove by Induction
+		      </font></h2>
+		          <h3><font color="#ba4a00">
+			  \[1^3+2^3+ \cdots +n^3 = \frac{n^2(n+1)^2}{4}\]</font> </h3>
+
+		    </section>
+
+
+		    			    <section class="center">
+					      
+
+		    <h2>Thank You!</h2>
+
+<h2><font color="#ba4a00">Like, Share, and Subscribe!</font></h2>
+</section>		    
+
+		    
+	      	    <section data-transition="fade-in fade-out">
+		      <h2><font color="#ba4a00">Count in 2 Ways</font> </h2>
+
+		      <h3 class="fragment">LHS: 2n-choose-2 </h3>
+		      <h3 class="fragment">RHS: Split $2n$ objects  <font color="#ba4a00">evenly</font> in group $A$, and $B$ </h3>
+		      <ol>
+			<li class="fragment">Pick 2 from A: <span class="fragment"> <font color="#ba4a00">${n \choose 2}$</font></span>
+			<li class="fragment">Pick 2 from B: <span class="fragment"> <font color="#ba4a00">${n \choose 2}$</font></span>
+			<li class="fragment">Pick 1 from A, and then 1 from B:  <span class="fragment"><font color="#ba4a00">$n\cdot n = n^2$</font></span>
+		      </ol>
+		      <h3 class="fragment">		      <font color="#ba4a00">\[{2n \choose 2} = 2{n \choose 2} + n^2\]</font> </h3>
+		    </section>
+
+			    <section class="center">
+	
+<h2>Math on<br> <img src="data:image/png;base64,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" width="600">
+		     </h2> <h2>	Like, Share, and Subscribe!</h2>
+<h2><font color="#ba4a00">"Smarter In-A-Minute"</font></h2>
+
+</section>		    
+		    <section data-transition="fade-in fade-out">
+
+		      <h2><font color="#ba4a00">$p$-adic numbers $\nu_p(n)$</font></h2>
+		      <bR>
+		      <h2><font color="#ba4a00">Legendre Formula</font></h2>
+		      \[ \nu_p(n!) = \sum_{i=1}^{\infty} \left\lfloor \frac{n}{p^i}\right\rfloor\]
+		    </section>
+		    
+
+		    
+
+		    <section data-transition="fade-in fade-out">
+		      <h1>Find the equation</h1>
+    <h2><font color="#ba4a00">of the graph by rotating <br>$y=x^2$ by $30\degree$ counter clockwise</font></h2>
+<img src="images/IMG_yx2-1.jpeg" width="680">
+  </section>
+
+		    
+		    <section data-transition="fade-in fade-out">
+		      <h1>Find the equation</h1>
+    <h2><font color="#ba4a00">of the graph by rotating <br>$y=x^2$ by $30\degree$ counter clockwise</font></h2>
+<img src="images/IMG_yx2-1.jpeg" width="680">
+  </section>
+
+
+		    <section class="center">
+  <h1><font color="#ba4a00"> A Classic Problem for </font></h1>
+<h2><font color="#ba4a00">  Generalized PigeonHole Principle</font></h2>
+  <h3>Any sequence of <font color="#ba4a00">$n^2+1$</font> distinct real numbers must contain<br>
+    a subsequence of
+<font color="#ba4a00">
+    $n+1$</font> elements that is <br> <em>strictly increasing</em> or <em> strictly 
+    decreasing</em>.
+    </h3>
+
+</section>
+
+
+
+  <section data-transition="fade-in fade-out">
+    <h2><font color="#ba4a00"> Generalized PigeonHole Principle</font></h2>
+If $ n$ objects are placed into $k$ boxes, then there is at least one box containing $\lceil \frac{N}{k}\rceil$
+		     objects.
+  </section>
+  
+<section class="center">
+  <h2><font color="#ba4a00"> Euclidean Algorithm and Bezout Coefficients </font></h2>
+  <p>1. If $a=qb+r, 0\le r\lt b$, then $\gcd(a,b) = \gcd(b, r)$
+    </p>
+  <p>2. For positive integers $(m,n)$, find $x,y$ such that $mx+ny = \gcd(m, n)$ </p>
+</section>
+  <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">In the Previous Episode </font></h2>
+		     
+		     <p class="fragment"> Every pair of positive integers $(m,n)$, has a greatest common divisor</p>
+		     <p class="fragment"> For positive integers $(m,n)$, there exist integers $x,y$ such that $mx+ny = \gcd(m, n)$ </p>
+		     <p class="fragment"> $\gcd(m, n)$ is the least element of all positive linear combination of $m, n$</p>
+
+
+		     </p>		     
+		    
+		   </section>
+
+
+  <section data-transition="fade-in fade-out">
+    		     <h2><font color="#ba4a00">Find $x, y$</font></h2>
+		     
+		     <p> $\gcd(1234, 57713) = 1$, how to find $x, y$ for
+		       \[1234x+57713y = 1\]
+
+</section>
+
+
+
+  
+
+		   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">$a=bq+r$</font></h2>
+		     Theorem: Let $a,b,q,r \in \mathbb{Z}$, and $a = bq+r$. Then
+		     \[\gcd(a, b) = \gcd(b, r)\]
+
+		     <p class="fragment"><font color="#ba4a00">Proof outline:</font>
+		       \[d=\gcd(a, b) \Rightarrow d|a, d|b, \Rightarrow d|r = a-bq\]
+		     </p>
+		     <p class="fragment">
+		       \[d'|b, d'|r, \Rightarrow d'|d\]
+		     </p>
+		   </section>
+		   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 &=& 1234\times 46 +949\\
+		     1234 &=& 949\times 1 + 285\\
+		     949 &=& 285\times 3 + 94\\
+		     285 &=& 94\times 3 + 3\\
+		     94 &=& 3\times 31 +1 \\
+		     3 &=& 1\times 3 +0
+		     \end{align*}
+		     \]
+
+		     <p class="fragment">
+		       \[ r_0=57713, r_1=1234, r_2=949, r_3=285\]
+		       \[ r_4=94, r_5=3, r_6=1\]
+		     </p>
+		   </section>
+  <section data-transition="fade-in fade-out">
+    <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+<p>
+    <pre>
+  def gcd(a, b):
+    if a == 0:
+      return b
+ 
+    return gcd(b % a, a)
+  </pre>
+</p>
+
+  </section>
+
+		   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow &  949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p class="fragment"> <font color="#ba4a00"> 
+		       \[ 1= 94-3\times 31\]</font>
+		     </p>
+		   </section>
+
+		   		   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow &  949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= 94-(285-94\times 3) \times 31\]</font>
+		     </p>
+		   </section>
+
+				   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow &  949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= 94\times 94 -285 \times 31\]</font>
+		     </p>
+		   </section>
+
+
+				   				   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow &  949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= (949-285\times 3) \times 94 -285 \times 31\]</font>
+		     </p>
+		   </section>
+
+				   				   <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow & 949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= 949\times 94 -285\times 313\]</font>
+		     </p>
+		   </section>
+
+
+							<section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow & 949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= 949\times 94 -(1234-949\times 1)\times 313\]</font>
+		     </p>
+							</section>
+														<section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow & 949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= 949\times 407 -1234\times 313\]</font>
+		     </p>
+		   </section>
+
+							<section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00">Euclidean Algorithm</font></h2>
+		     \[
+		     \begin{align*}
+		     57713 = 1234\times 46 +949 &\Rightarrow & 949=57713-1234\times 46\\
+		     1234 = 949\times 1 + 285 &\Rightarrow &  285 = 1234 - 949\times 1\\
+		     949 = 285\times 3 + 94&\Rightarrow & 94 = 949 - 285\times 3\\
+		     285 = 94\times 3 + 3&\Rightarrow &  3= 285-94\times 3\\
+		     94 = 3\times 31 +1 &\Rightarrow &  1= 94-3\times 31\\
+		     3 = 1\times 3 +0 
+		     \end{align*}
+		     \]
+
+		     <p> <font color="#ba4a00"> 
+			 \[ 1= (57713-1234\times 46) \times 407 -1234\times 313\]</font>
+		     </p>
+		     <p class="fragment"> <font color="#ba4a00"> 
+			 \[ 1= 57713\times 407 -1234\times 19035\]</font>
+		     </p>
+
+		     
+		   </section>
+														
+  <section data-transition="fade-in fade-out">
+		     <h2><font color="#ba4a00"> Summary </font></h2>
+		     
+
+		     <p class="fragment"> For positive integers $(m,n)$, there exist integers $x,y$ such that $mx+ny = \gcd(m, n)$ </p>
+
+		     <p class="fragment"> $\gcd(m, n)$ is the least element of all positive linear combination of $m, n$</p>
+	     	     <p class="fragment">Theorem behind the Euclidean Algorithm: Let $a,b,q,r \in \mathbb{Z}$, and $a = bq+r$. Then
+		     \[\gcd(a, b) = \gcd(b, r)\]
+		     </p>
+	     	     <p class="fragment">Use Extended Euclidean Algorithm to find out $x, y$, for
+		       
+		       \[\gcd(a, b) = ax+by\]
+		     </p>
+		     
+		   </section>
+
+  <section class="center" data-transition="fade-in fade-out">
+    <h1>Derangement</h1>
+    <h2><font color="#ba4a00">
+	\[ !n = \left[\frac{n!}{e}\right]\]
+	\[ !n = (n-1) (!(n-2) + !(n-1))\]
+    </font></h2>
+</h3>		   </section>
+
+  <section class="center" data-transition="fade-in fade-out">
+    <h1>Prove that</h1>
+    <h2><font color="#ba4a00">
+
+	\[ C_n = \frac{1}{n+1} {2n \choose n}\]
+	
+	is an integer.
+
+      </font>
+     
+    </h2>
+<h3>A Number-theoretic Approach</h3>
+    
+  </section>
+    <section class="center" data-transition="fade-in fade-out">
+
+    <h2><font color="#ba4a00">In an earlier episode  </font></h2>
+	   </section>
+    <section data-transition="fade-in fade-out">
+    <h1>Prove</h1>
+    <h2><font color="#ba4a00">
+	\[ (n+1)\bigg| {2n \choose n}\]
+
+    </font></h2>
+    <h2 class="fragment"> A combinatorial approach</h2>
+    
+    </section>
+
+	      	    <section class="center" data-transition="fade-in fade-out">
+		      <h1><font color="#ba4a00">Prove</font> </h1> <h2>
+			<font color="#ba4a00">\[n!\bigg|(a+1) (a+2)\cdots (a+n)\]</font> 
+</h2><h3>				The product of $n$ consecutive integers <br>
+				is divisible by $n!$   </h3>
+		    </section>
+    
+       <section class="center" data-transition="fade-in fade-out">
+      <h2><font color="#ba4a00"> \[ C_{2n}^{n} = \frac{(2n)!}{n!n!}\]</font></h2>
+      <h2 class="fragment">\[=\frac{(n+1)(n+2)\cdots(2n)}{n!}\]</h2>
+<h3 class="fragment">				The product of $n$ consecutive integers <br>
+				is divisible by $n!$   </h3>
+      <h2 class="fragment"><font color="#ba4a00"> $C_{2n}^n$ is an integer</font></h2>
+
+		     
+		   </section>
+
+              <section class="center" data-transition="fade-in fade-out">
+      <h3><font color="#ba4a00"> \[ C_{2n}^{n} = \frac{(n+1)(n+2)\cdots(2n)}{n!}\]</font></h3>
+      <h3 class="fragment"> \[= \frac{(n+1)}{n} \frac{(n+2)\cdots(2n)}{(n-1)!}\]</font></h3>
+      <h3 class="fragment"> \[= \frac{(n+1)}{n} z_0 \text{ , where } z_0 \text{ is an integer }\]</h3>
+
+      <h3 class="fragment">	$\gcd(n+1, n) = 1$, and $ C_{2n}^n$ is an integer   </h3>
+
+
+		     
+		   </section>
+
+
+<section class="center" data-transition="fade-in fade-out">
+  <h2><font color="#ba4a00"> $C_{2n}^n$ is an integer</font></h2>
+      <h3><font color="#ba4a00"> \[ C_{2n}^{n} = (n+1) \frac{z_0}{n}\]</font></h3>
+      <h3 class="fragment"> \[n|z_0\Rightarrow \frac{z_0}{n} = \frac{C_{2n}^n}{n+1} = z_1 \text{, for some integer } z_1\]</h3>
+
+
+      <h2 class="fragment"><font color="#ba4a00"> Catalan number $C_n=\frac{1}{n+1}{2n \choose n}$ is an integer</font></h2>		   </section>
+
+		   <section class="center">
+		      <h2><font color="#ba4a00">Thank You!</font></h2>
+
+		      <p>	Like, Share, and Subscribe!</p>
+</section>
+    <section class="center" data-transition="fade-in fade-out">
+
+ 
+    <h1><font color="#ba4a00"> Prove </font></h1>
+<h2>		     
+     \[(10!)^{11}|100!\]
+</h2>
+		     
+		   </section>
+
+    <section class="center" data-transition="fade-in fade-out">
+
+ 
+    <h2><font color="#ba4a00"> A Combinatorial Problem </font></h2>
+<h3>		     
+  With 100 students, how many ways to form <br>
+  10 groups of 10 members each?
+</h3>
+		     
+		   </section>
+
+
+
+    
+
+
+
+
+		   <section class="center">
+		      <h2><font color="#ba4a00">Thank You!</font></h2>
+
+		      <p>	Like, Share, and Subscribe!</p>
+
+</section>
+
+				
+			</div>
+		</div>
+
+		<script src="/reveal.js/dist/reveal.js"></script>
+		<script src="/reveal.js/plugin/notes/notes.js"></script>
+		<script src="/reveal.js/plugin/math/math.js"></script>
+		<script src="/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+			center: false,
+			    hash: true,
+			    width: 1920,
+			    height: 1080,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+			    plugins: [ RevealMath.KaTeX, RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
