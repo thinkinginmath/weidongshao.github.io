@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC12 Countdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #countdown {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="countdown">
+    <h1>Time left until AMC12</h1>
+    <h2 style="color: #ba4a00">
+     <span id="timer">Calculating...</span>
+    </h2>
+</div>
+
+<script>
+    function updateCountdown() {
+        // Set the date we're counting down to
+        let countDownDate = new Date("Nov 8, 2023 00:00:00").getTime();
+
+        // Get the current date and time
+        let now = new Date().getTime();
+
+        // Find the time difference between now and the count down date
+        let distance = countDownDate - now;
+
+        // Time calculations for days, hours, and minutes
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / (1000));
+
+        // Output the result in the specified element
+        document.getElementById("timer").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
+
+        // If the count down is finished, display a message
+        if (distance < 0) {
+            clearInterval(interval);
+            document.getElementById("timer").innerHTML = "Good luck on the AMC12!";
+        }
+    }
+
+    updateCountdown();  // Call the function immediately when the page loads
+
+    let interval = setInterval(updateCountdown, 1000);  // Then update every minute
+</script>
+
+</body>
+</html>
