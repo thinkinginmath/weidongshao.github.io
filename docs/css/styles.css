@@ -1,0 +1,70 @@
+/* General styles for all sections */
+.section {
+    padding: 50px 15%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; /* This will keep the content vertically centered */
+    transition: background-color 0.3s;
+    width: 80%; /* Adjust the width as needed */
+    margin: auto; /* This will center the section container */
+}
+
+/* Removed align-items: center; from .section and applying text alignment to the individual elements */
+
+/* Specific Background Styles for Each Section */
+.home-section {
+    background-color: #007bff;
+    color: white; /* Ensures text color is white for readability */
+    /* Add any additional styles for the home section here */
+    background-image: url('images/title.jpeg'); /* Assuming you have an image in the images folder */
+    background-size: cover;
+    background-position: center;
+}
+
+.services-section {
+    background-color: #607D8B; /* Blue-grey */
+    color: white;
+    /* Add any additional styles for the services section here */
+}
+
+.contact-section {
+    background-color: #dc3545;
+    color: white;
+    /* Add any additional styles for the contact section here */
+}
+
+/* Styles for headers (H1, H2, H3, H4) */
+h1, h2, h3, h4 {
+    text-align: center; /* Keeps headers centered */
+    width: 100%; /* Ensures full width to center properly */
+    /* Add any additional header styles here */
+}
+
+/* Styles for paragraph text to align left */
+.section p {
+    text-align: left; /* Aligns paragraphs to the left */
+    width: 100%; /* Full width for proper alignment */
+    /* Add any additional paragraph styles here */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .section {
+        padding: 20px;
+        min-height: auto; /* Allows section height to adjust to content */
+    }
+
+    .section p {
+        text-align: left; /* Ensures paragraphs are left-aligned on smaller screens */
+        /* Add any additional responsive paragraph styles here */
+    }
+    /* Add any additional responsive styles here */
+}
+.home-section h1 {
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: if you want the font to be bolder */
+    color: white; /* Ensures text color is white for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for better readability */
+    margin: 0 0 1rem 0; /* Provides spacing below the header; adjust as needed */
+}
