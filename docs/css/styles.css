@@ -17,7 +17,7 @@
     background-color: #007bff;
     color: white; /* Ensures text color is white for readability */
     /* Add any additional styles for the home section here */
-    background-image: url('images/title.jpeg'); /* Assuming you have an image in the images folder */
+    background-image: url('/images/title.jpeg'); /* Assuming you have an image in the images folder */
     background-size: cover;
     background-position: center;
 }
