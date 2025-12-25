@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent OS | Unified AI Gateway for Enterprise</title>
-    <meta name="description" content="One API for all LLMs. BYOK support for OpenAI, Anthropic, Google Gemini. AI Gateway for DeepSeek, Qwen, GLM, MiniMax. Enterprise-grade control and optimization.">
+    <title>R9S Agent OS | Unified AI Gateway for Enterprise</title>
+    <meta name="description" content="Unified AI Gateway for enterprise. BYOK support for OpenAI, Anthropic, Google Gemini. AI Gateway for open source models (DeepSeek, Qwen) and services (MiniMax, FishAudio TTS). Enterprise-grade control.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <span class="logo">Agent OS</span>
+                <span class="logo">R9S Agent OS</span>
                 <span class="logo-badge">by uuBright</span>
             </div>
             <div class="nav-links">
@@ -33,8 +33,8 @@
                 <div class="hero-badge">Launching Q1 2026</div>
                 <h1>The Unified Interface for LLMs</h1>
                 <p class="hero-description">
-                    One API to access every major LLM provider. Bring your own keys for OpenAI, Anthropic, and Google.
-                    Access optimized open source models through our AI Gateway. Intelligent routing, enterprise security, and full observability.
+                    One API to access every major LLM provider. Bring your own keys for OpenAI, Anthropic, and Google Gemini.
+                    Access open source models (DeepSeek, Qwen) and AI services (MiniMax, FishAudio TTS) through our AI Gateway. Intelligent routing, enterprise security, and full observability.
                 </p>
                 <div class="hero-actions">
                     <a href="mailto:sales@uubright.com" class="btn btn-primary">Request Early Access</a>
@@ -45,15 +45,19 @@
 
         <section class="providers">
             <div class="container">
-                <p class="providers-label">Works with the models you already use</p>
+                <p class="providers-label">BYOK: Bring Your Own Keys</p>
                 <div class="providers-grid">
                     <div class="provider">OpenAI</div>
                     <div class="provider">Anthropic</div>
                     <div class="provider">Google Gemini</div>
+                </div>
+                <p class="providers-label" style="margin-top: 2rem;">AI Gateway: Open Source & Services</p>
+                <div class="providers-grid">
                     <div class="provider">DeepSeek</div>
                     <div class="provider">Qwen</div>
-                    <div class="provider">GLM</div>
-                    <div class="provider">MiniMax</div>
+                    <div class="provider">Qwen Coder</div>
+                    <div class="provider">MiniMax M2</div>
+                    <div class="provider">FishAudio TTS</div>
                 </div>
             </div>
         </section>
@@ -85,7 +89,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Built for Enterprise AI Teams</h2>
-                    <p>Whether you're running production workloads on GPT-4 or experimenting with open source models, Agent OS gives you the control and flexibility you need.</p>
+                    <p>Whether you're running production workloads on GPT-4 or experimenting with open source models, R9S Agent OS gives you the control and flexibility you need.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -190,8 +194,8 @@
         <section id="models" class="models">
             <div class="container">
                 <div class="section-header">
-                    <h2>AI Gateway: Open Source Models</h2>
-                    <p>Access leading open source models through our optimized, managed infrastructure. No API keys needed—just pay for what you use.</p>
+                    <h2>AI Gateway: Open Source Models & Services</h2>
+                    <p>Access leading open source models and AI services through our optimized, managed infrastructure. No API keys needed—just pay for what you use.</p>
                 </div>
                 <div class="models-grid">
                     <div class="model-card">
@@ -201,21 +205,31 @@
                     </div>
                     <div class="model-card">
                         <h3>Qwen 2.5</h3>
-                        <p>Alibaba's latest Qwen series with excellent multilingual support, strong coding performance, and competitive benchmark scores.</p>
+                        <p>Alibaba's latest Qwen series with excellent multilingual support, strong general performance, and competitive benchmark scores.</p>
                         <span class="model-tag">Multilingual</span>
                     </div>
                     <div class="model-card">
-                        <h3>GLM-4</h3>
-                        <p>Zhipu AI's GLM-4 with advanced dialogue, function calling, and tool-use capabilities. Optimized for Chinese and English.</p>
-                        <span class="model-tag">Tool Use</span>
+                        <h3>Qwen Coder</h3>
+                        <p>Specialized coding model from the Qwen family. Optimized for code generation, completion, and technical tasks.</p>
+                        <span class="model-tag">Coding</span>
                     </div>
                     <div class="model-card">
                         <h3>MiniMax M2</h3>
                         <p>MiniMax's latest models optimized for creative writing, roleplay, and long-form conversational applications.</p>
                         <span class="model-tag">Creative</span>
                     </div>
+                    <div class="model-card">
+                        <h3>MiniMax TTS</h3>
+                        <p>High-quality text-to-speech service with natural voice synthesis. Multiple voices and languages supported.</p>
+                        <span class="model-tag">Voice</span>
+                    </div>
+                    <div class="model-card">
+                        <h3>FishAudio TTS</h3>
+                        <p>Advanced text-to-speech with voice cloning capabilities. Create custom voices for your applications.</p>
+                        <span class="model-tag">Voice</span>
+                    </div>
                 </div>
-                <p class="models-note">We continuously evaluate and add top-performing open source models. Custom model deployment available for enterprise customers.</p>
+                <p class="models-note">We continuously evaluate and add top-performing open source models and services. Custom deployment available for enterprise customers.</p>
             </div>
         </section>
 
@@ -293,7 +307,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Built For</h2>
-                    <p>Teams across industries trust Agent OS for their production AI workloads.</p>
+                    <p>Teams across industries trust R9S Agent OS for their production AI workloads.</p>
                 </div>
                 <div class="use-cases-grid">
                     <div class="use-case">
@@ -316,7 +330,7 @@
             <div class="container">
                 <div class="cta-content">
                     <h2>Get Early Access</h2>
-                    <p>Agent OS launches in Q1 2026. Join our early access program to shape the product and get priority onboarding.</p>
+                    <p>R9S Agent OS launches in Q1 2026. Join our early access program to shape the product and get priority onboarding.</p>
                     <ul class="cta-benefits">
                         <li>Priority access before public launch</li>
                         <li>Direct line to our product team</li>
@@ -333,7 +347,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo">Agent OS</span>
+                    <span class="logo">R9S Agent OS</span>
                     <p>The unified AI gateway for enterprise teams. One API for every LLM.</p>
                 </div>
                 <div class="footer-contact">
