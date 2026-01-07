@@ -146,6 +146,17 @@ body {
     border-color: var(--color-text-muted);
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border);
+}
+
+.btn-outline:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+}
+
 .btn-large {
     padding: 16px 32px;
     font-size: 16px;
@@ -176,6 +187,13 @@ body {
     color: var(--color-text);
     max-width: 800px;
     margin: 0 auto 24px;
+}
+
+.hero-tagline {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 16px;
 }
 
 .hero-description {
@@ -364,6 +382,63 @@ body {
     line-height: 1.6;
 }
 
+/* Getting Started Section */
+.getting-started {
+    padding: var(--section-padding) 0;
+}
+
+.integration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.integration-option {
+    padding: 32px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.integration-option h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.integration-option p {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+}
+
+.code-block {
+    background: #1f2937;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    color: #e5e7eb;
+    line-height: 1.6;
+    white-space: pre;
+}
+
+.integration-cta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 /* Models Section */
 .models {
     padding: var(--section-padding) 0;
@@ -511,6 +586,42 @@ body {
     line-height: 1.6;
 }
 
+/* Community Section */
+.community {
+    padding: var(--section-padding) 0;
+}
+
+.community-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.community-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.community-link:hover {
+    border-color: var(--color-text-muted);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.community-link svg {
+    color: var(--color-text-secondary);
+}
+
 /* CTA Section */
 .cta {
     padding: var(--section-padding) 0;
@@ -554,6 +665,13 @@ body {
     opacity: 0.5;
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .cta .btn-primary {
     background: white;
     color: var(--color-text);
@@ -561,6 +679,17 @@ body {
 
 .cta .btn-primary:hover {
     background: var(--color-bg-muted);
+}
+
+.cta .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Footer */
@@ -572,7 +701,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 48px;
     margin-bottom: 48px;
 }
@@ -586,6 +715,29 @@ body {
     font-size: 14px;
     color: var(--color-text-muted);
     max-width: 280px;
+    margin-bottom: 16px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-bg-muted);
+    border-radius: 8px;
+    color: var(--color-text-secondary);
+    transition: all var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--color-border);
+    color: var(--color-text);
 }
 
 .footer h4 {
@@ -648,6 +800,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .integration-grid {
+        grid-template-columns: 1fr;
+    }
+
     .models-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -693,6 +849,25 @@ body {
 
     .byok-grid {
         grid-template-columns: 1fr;
+    }
+
+    .community-grid {
+        gap: 16px;
+    }
+
+    .community-link {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
     }
 
     .footer-content {
