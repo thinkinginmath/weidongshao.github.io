@@ -1,0 +1,14 @@
+<svg width="256" height="200" viewBox="0 0 256 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="uubright-mark-title">
+  <title id="uubright-mark-title">uuBright</title>
+  <defs>
+    <linearGradient id="uubright-mark-gradient" x1="187" y1="1" x2="129" y2="199" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#98BCEE"/>
+      <stop offset="0.55" stop-color="#4967EF"/>
+      <stop offset="1" stop-color="#1728F1"/>
+    </linearGradient>
+  </defs>
+  <path d="M99.5 0H256L211.6 139.8C199.9 176.6 160.4 200 114.6 200C84.5 200 62.6 184.2 56.1 159.1C54.9 154.5 55.4 149.2 56.9 143.7L99.5 0Z" fill="url(#uubright-mark-gradient)"/>
+  <path d="M23.8 31H61.4L51.2 65.1H12.3L23.8 31Z" fill="#000"/>
+  <path d="M4.6 94.2H42.6L37.6 115.3C34.3 129.7 41.2 136.4 57.9 136.4C87.2 136.4 111.8 115.2 123.4 83.8H162.5C148.3 137.1 105.4 173.1 55.4 173.1C20.3 173.1 0 152.3 0 121.2C0 112.7 1.4 103.6 4.6 94.2Z" fill="#000"/>
+  <circle cx="153.3" cy="42.8" r="24" fill="#000"/>
+</svg>

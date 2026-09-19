@@ -1,425 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UURoute Agent OS | Where AI Finds Its Route</title>
-    <meta name="description" content="The Agent OS for Modern AI Teams. Build and orchestrate compound AI systems with unified model access to 50+ providers, semantic caching, prompt versioning, real-time evaluation, and enterprise-grade controls.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1718">
+  <title>uuBright — Engineering the systems behind AI</title>
+  <meta name="description" content="uuBright builds infrastructure, usage systems, and technical education for AI-native engineering teams.">
+  <meta property="og:title" content="uuBright — Engineering the systems behind AI">
+  <meta property="og:description" content="Infrastructure, usage systems, and technical education for AI-native engineering teams.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uubright.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="logo">UURoute Agent OS</span>
-                <span class="logo-badge">by uuBright</span>
-            </div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#getting-started">Get Started</a>
-                <a href="#models">Models</a>
-                <a href="#platform">Platform</a>
-                <a href="https://portal.uuroute.ai/dashboard/keys" class="nav-cta" target="_blank">Get API Key</a>
-            </div>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="uuBright home">
+        <span class="wordmark-logo"><img src="/assets/uubright-mark.svg" alt=""></span>
+        <span>uuBright</span>
+      </a>
+      <div class="nav-links">
+        <a href="#work">What we build</a><a href="#about">About</a><a class="nav-contact" href="mailto:sales@uubright.com">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Where AI Finds Its Route</h1>
-                <p class="hero-tagline">The Agent OS for Modern AI Teams</p>
-                <p class="hero-description">
-                    Build and orchestrate compound AI systems with unified model access to 50+ providers, prompt versioning, semantic caching, real-time evaluation, and enterprise-grade cost controls—all from one platform.
-                </p>
-                <div class="hero-actions">
-                    <a href="https://portal.uuroute.ai/dashboard/keys" class="btn btn-primary" target="_blank">Get API Key</a>
-                    <a href="#getting-started" class="btn btn-secondary">Explore Docs</a>
-                    <a href="mailto:sales@uubright.com" class="btn btn-outline">Request Demo</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="providers">
-            <div class="container">
-                <p class="providers-label">BYOK: Bring Your Own Keys</p>
-                <div class="providers-grid">
-                    <div class="provider">OpenAI</div>
-                    <div class="provider">Anthropic</div>
-                    <div class="provider">Google Gemini</div>
-                </div>
-                <p class="providers-label" style="margin-top: 2rem;">AI Gateway: Open Source & Services</p>
-                <div class="providers-grid">
-                    <div class="provider">DeepSeek</div>
-                    <div class="provider">Qwen</div>
-                    <div class="provider">Qwen Coder</div>
-                    <div class="provider">MiniMax M2</div>
-                    <div class="provider">FishAudio TTS</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="metrics">
-            <div class="container">
-                <div class="metrics-grid">
-                    <div class="metric">
-                        <span class="metric-value">50+</span>
-                        <span class="metric-label">Model Providers</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-value">30%+</span>
-                        <span class="metric-label">Cost Savings via Caching</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-value">99.9%</span>
-                        <span class="metric-label">Uptime SLA</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-value">&lt;100ms</span>
-                        <span class="metric-label">Global Routing Latency</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Built for Enterprise AI Teams</h2>
-                    <p>Whether you're running production workloads on GPT-4 or experimenting with open source models, UURoute Agent OS gives you the control and flexibility you need.</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                            </svg>
-                        </div>
-                        <h3>Bring Your Own Keys</h3>
-                        <p>Connect your existing API keys from OpenAI, Anthropic, Google Gemini, Azure OpenAI, and AWS Bedrock. Your keys, your billing, your data sovereignty. Zero vendor lock-in.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                            </svg>
-                        </div>
-                        <h3>AI Gateway for Open Source</h3>
-                        <p>Access DeepSeek, Qwen, GLM, and MiniMax through our optimized infrastructure. We handle the deployment, scaling, and optimization so you can focus on building.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 3 21 3 21 8"></polyline>
-                                <line x1="4" y1="20" x2="21" y2="3"></line>
-                                <polyline points="21 16 21 21 16 21"></polyline>
-                                <line x1="15" y1="15" x2="21" y2="21"></line>
-                                <line x1="4" y1="4" x2="9" y2="9"></line>
-                            </svg>
-                        </div>
-                        <h3>Intelligent Routing</h3>
-                        <p>Automatically route requests to the best model based on task type, cost constraints, latency requirements, or custom rules. Failover between providers seamlessly.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                        </div>
-                        <h3>Enterprise Security</h3>
-                        <p>SOC 2 Type II compliance roadmap. Role-based access control, SSO integration, comprehensive audit logs, PII redaction, and spend guardrails across all providers.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="20" x2="12" y2="10"></line>
-                                <line x1="18" y1="20" x2="18" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="16"></line>
-                            </svg>
-                        </div>
-                        <h3>Full Observability</h3>
-                        <p>Real-time dashboards for request volume, latency, token usage, and costs. Trace every request across your AI pipeline. Export to your existing monitoring stack.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <h3>One API, All Models</h3>
-                        <p>Unified OpenAI-compatible API for all providers. Switch between Claude, GPT-4, Gemini, or DeepSeek with a single parameter change. No code refactoring needed.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="how-it-works">
-            <div class="container">
-                <div class="section-header">
-                    <h2>How It Works</h2>
-                    <p>Get started in minutes with our simple integration process.</p>
-                </div>
-                <div class="steps-grid">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Connect Your Keys</h3>
-                        <p>Add your existing API keys from OpenAI, Anthropic, Google, or other providers. Configure spend limits and access policies for each key.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Configure Routing</h3>
-                        <p>Set up routing rules based on your requirements. Route by model capability, cost, latency, or create custom logic for your use cases.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Integrate Once</h3>
-                        <p>Point your application to our unified API endpoint. Use our OpenAI-compatible SDK or REST API. That's it—you're ready to go.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <h3>Monitor & Optimize</h3>
-                        <p>Track usage, costs, and performance in real-time. Use our insights to optimize model selection and reduce costs without sacrificing quality.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="getting-started" class="getting-started">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Get Started in Minutes</h2>
-                    <p>Two ways to integrate with UURoute Agent OS—choose what works best for your workflow.</p>
-                </div>
-                <div class="integration-grid">
-                    <div class="integration-option">
-                        <h3>Option 1: Create an API Key</h3>
-                        <p>Open the UURoute portal to create and manage API keys for your team.</p>
-                        <div class="code-block">
-                            <pre><code>https://portal.uuroute.ai/dashboard/keys</code></pre>
-                        </div>
-                    </div>
-                    <div class="integration-option">
-                        <h3>Option 2: Direct API Integration</h3>
-                        <p>OpenAI-compatible API—drop-in replacement with intelligent routing.</p>
-                        <div class="code-block">
-                            <pre><code>curl https://api.uuroute.ai/v1/chat/completions \
-  -H "Authorization: Bearer $UUROUTE_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "gpt-4o",
-    "messages": [{"role": "user", "content": "Hello!"}]
-  }'</code></pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="integration-cta">
-                    <a href="https://portal.uuroute.ai/dashboard/keys" class="btn btn-primary" target="_blank">Get Your API Key</a>
-                    <a href="https://uuroute.ai/docs/guides/introduction/" class="btn btn-secondary" target="_blank">View Full Documentation</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="models" class="models">
-            <div class="container">
-                <div class="section-header">
-                    <h2>AI Gateway: Open Source Models & Services</h2>
-                    <p>Access leading open source models and AI services through our optimized, managed infrastructure. No API keys needed—just pay for what you use.</p>
-                </div>
-                <div class="models-grid">
-                    <div class="model-card">
-                        <h3>DeepSeek</h3>
-                        <p>DeepSeek-V3 and DeepSeek-R1 with state-of-the-art reasoning and coding capabilities. Competitive with GPT-4 at a fraction of the cost.</p>
-                        <span class="model-tag">Reasoning</span>
-                    </div>
-                    <div class="model-card">
-                        <h3>Qwen 2.5</h3>
-                        <p>Alibaba's latest Qwen series with excellent multilingual support, strong general performance, and competitive benchmark scores.</p>
-                        <span class="model-tag">Multilingual</span>
-                    </div>
-                    <div class="model-card">
-                        <h3>Qwen Coder</h3>
-                        <p>Specialized coding model from the Qwen family. Optimized for code generation, completion, and technical tasks.</p>
-                        <span class="model-tag">Coding</span>
-                    </div>
-                    <div class="model-card">
-                        <h3>MiniMax M2</h3>
-                        <p>MiniMax's latest models optimized for creative writing, roleplay, and long-form conversational applications.</p>
-                        <span class="model-tag">Creative</span>
-                    </div>
-                    <div class="model-card">
-                        <h3>MiniMax TTS</h3>
-                        <p>High-quality text-to-speech service with natural voice synthesis. Multiple voices and languages supported.</p>
-                        <span class="model-tag">Voice</span>
-                    </div>
-                    <div class="model-card">
-                        <h3>FishAudio TTS</h3>
-                        <p>Advanced text-to-speech with voice cloning capabilities. Create custom voices for your applications.</p>
-                        <span class="model-tag">Voice</span>
-                    </div>
-                </div>
-                <p class="models-note">We continuously evaluate and add top-performing open source models and services. Custom deployment available for enterprise customers.</p>
-            </div>
-        </section>
-
-        <section class="byok-providers">
-            <div class="container">
-                <div class="section-header">
-                    <h2>BYOK: Enterprise Providers</h2>
-                    <p>Bring your own API keys from the world's leading AI providers. Unified access with your existing billing and data agreements.</p>
-                </div>
-                <div class="byok-grid">
-                    <div class="byok-card">
-                        <h3>OpenAI</h3>
-                        <p>GPT-4o, GPT-4 Turbo, GPT-3.5, and all embedding models. Full support for function calling, vision, and JSON mode.</p>
-                    </div>
-                    <div class="byok-card">
-                        <h3>Anthropic</h3>
-                        <p>Claude 3.5 Sonnet, Claude 3 Opus, and Claude 3 Haiku. Extended context windows and tool use supported.</p>
-                    </div>
-                    <div class="byok-card">
-                        <h3>Google</h3>
-                        <p>Gemini 1.5 Pro, Gemini 1.5 Flash, and Gemini Ultra. Multimodal capabilities including image and video understanding.</p>
-                    </div>
-                    <div class="byok-card">
-                        <h3>Azure OpenAI</h3>
-                        <p>Access OpenAI models through your Azure subscription. Enterprise data residency and compliance requirements met.</p>
-                    </div>
-                    <div class="byok-card">
-                        <h3>AWS Bedrock</h3>
-                        <p>Access Anthropic, Meta Llama, and other models through your AWS account. Leverage your existing AWS security posture.</p>
-                    </div>
-                    <div class="byok-card">
-                        <h3>More Coming</h3>
-                        <p>Mistral, Cohere, AI21, and additional providers on our roadmap. Request specific integrations for your enterprise needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="platform" class="platform">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Agent Development Platform</h2>
-                    <p>Beyond API access—a complete platform for building, deploying, and scaling production AI applications.</p>
-                </div>
-                <div class="platform-grid">
-                    <div class="platform-item">
-                        <h3>LLM Inference Optimization</h3>
-                        <p>Semantic caching reduces redundant API calls by up to 30%. Request batching and prompt optimization lower costs while maintaining quality. Automatic retry with exponential backoff for reliability.</p>
-                    </div>
-                    <div class="platform-item">
-                        <h3>Compound AI Systems</h3>
-                        <p>Build sophisticated agents that combine multiple models, RAG pipelines, and external tools. Native support for LangChain, LlamaIndex, and custom orchestration frameworks.</p>
-                    </div>
-                    <div class="platform-item">
-                        <h3>Prompt Management</h3>
-                        <p>Version control for prompts with A/B testing capabilities. Deploy prompt changes without code deploys. Track performance metrics per prompt version.</p>
-                    </div>
-                    <div class="platform-item">
-                        <h3>Evaluation & Testing</h3>
-                        <p>Automated evaluation pipelines for model outputs. Compare model performance across your specific use cases. Regression testing for prompt changes.</p>
-                    </div>
-                    <div class="platform-item">
-                        <h3>Cost Management</h3>
-                        <p>Set budgets per team, project, or API key. Real-time cost alerts and automatic request throttling. Detailed cost attribution and forecasting.</p>
-                    </div>
-                    <div class="platform-item">
-                        <h3>Team Collaboration</h3>
-                        <p>Shared workspaces for prompt development and testing. Role-based permissions for production deployments. Integration with your existing CI/CD pipelines.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="use-cases">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Built For</h2>
-                    <p>Teams across industries trust UURoute Agent OS for their production AI workloads.</p>
-                </div>
-                <div class="use-cases-grid">
-                    <div class="use-case">
-                        <h3>AI-Native Startups</h3>
-                        <p>Move fast with unified access to all major models. Experiment with open source options while maintaining production reliability on commercial APIs.</p>
-                    </div>
-                    <div class="use-case">
-                        <h3>Enterprise AI Teams</h3>
-                        <p>Standardize LLM access across your organization. Enforce security policies, manage costs, and maintain compliance across all AI initiatives.</p>
-                    </div>
-                    <div class="use-case">
-                        <h3>AI Agencies & Consultants</h3>
-                        <p>Manage multiple client projects with separate billing and access controls. White-label options available for reseller partnerships.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Start Building Today</h2>
-                    <p>UURoute Agent OS is online. Get your API key now and start building with unified access to 50+ AI providers.</p>
-                    <ul class="cta-benefits">
-                        <li>Instant API access via uuroute.ai</li>
-                        <li>Direct line to our product team</li>
-                        <li>Influence the roadmap with your use cases</li>
-                        <li>Founding customer pricing</li>
-                    </ul>
-                    <div class="cta-buttons">
-                        <a href="https://portal.uuroute.ai/dashboard/keys" class="btn btn-primary btn-large" target="_blank">Get API Key</a>
-                        <a href="mailto:sales@uubright.com" class="btn btn-secondary btn-large">Contact Sales</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo">UURoute Agent OS</span>
-                    <p>Where AI Finds Its Route. The Agent OS for modern AI teams.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#getting-started">Getting Started</a></li>
-                        <li><a href="#models">AI Gateway</a></li>
-                        <li><a href="#platform">Platform</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="https://uuroute.ai" target="_blank">UURoute API</a></li>
-                        <li><a href="https://uuroute.ai/docs/guides/introduction/" target="_blank">Documentation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <address>
-                        <strong>uuBright</strong><br>
-                        10620 Southern Highlands Pkwy<br>
-                        Ste 110-165<br>
-                        Las Vegas, NV 89141<br>
-                        <a href="mailto:sales@uubright.com">sales@uubright.com</a><br>
-                        <a href="mailto:support@uuroute.ai">support@uuroute.ai</a>
-                    </address>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 uuBright. All rights reserved. | <a href="https://uuroute.ai" target="_blank">uuroute.ai</a> is a uuBright service.</p>
-            </div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Independent engineering studio</p>
+          <h1>Engineering the systems <em>behind AI.</em></h1>
+          <p class="hero-lede">uuBright builds the infrastructure that runs AI, the usage systems that make it economically sustainable, and the technical education that helps engineers master it.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore our work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:sales@uubright.com">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-    </footer>
+        <div class="system-map" aria-label="uuBright product ecosystem">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="map-core"><img src="/assets/uubright-mark.svg" alt=""><small>uuBright</small></div>
+          <div class="map-node node-route"><span>01</span><strong>uuRoute</strong><small>Operate</small></div>
+          <div class="map-node node-meter"><span>02</span><strong>Meterry</strong><small>Monetize</small></div>
+          <div class="map-node node-learn"><span>03</span><strong>SciMigo</strong><small>Understand</small></div>
+        </div>
+      </div>
+      <div class="hero-note shell"><span>One engineering thesis</span><p>AI systems should be observable, economically legible, and understandable by the people who build them.</p></div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> What we build</p>
+          <h2>From model call to business outcome.</h2>
+          <p>Three focused products for the operational, commercial, and human layers of modern AI engineering.</p>
+        </div>
+
+        <article class="product product-route">
+          <div class="product-index">01 / AI OPERATIONS</div>
+          <div class="product-content">
+            <div class="product-name"><div class="product-symbol route-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 29V13h10v8h14"/><path d="m27 16 5 5-5 5"/><circle cx="8" cy="29" r="3"/></svg></div><h3>uuRoute</h3></div>
+            <p class="product-tagline">Control and visibility for production AI.</p>
+            <p class="product-description">A routing, observability, and governance layer for teams running production AI products, copilots, and multi-step agent workflows.</p>
+            <ul class="capability-list" aria-label="uuRoute capabilities"><li>Universal model connectivity</li><li>Request-level observability</li><li>Routing and resilience</li><li>Enterprise governance</li></ul>
+            <a class="product-link" href="https://uuroute.ai/" target="_blank" rel="noopener">Explore uuRoute <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="product-visual route-visual" aria-hidden="true">
+            <div class="route-status"><i></i> All systems routed</div>
+            <div class="route-lines"><span class="route-origin">Your app</span><span class="route-hub">U</span><span class="route-endpoint endpoint-a">Model A</span><span class="route-endpoint endpoint-b">Model B</span><span class="route-endpoint endpoint-c">Model C</span><svg viewBox="0 0 440 240" preserveAspectRatio="none"><path d="M54 120 C135 120,125 120,212 120"/><path d="M228 120 C310 120,300 48,382 48"/><path d="M228 120 C310 120,300 120,382 120"/><path d="M228 120 C310 120,300 192,382 192"/></svg></div>
+          </div>
+        </article>
+
+        <article class="product product-meter">
+          <div class="product-index">02 / USAGE &amp; REVENUE</div>
+          <div class="product-content">
+            <div class="product-name"><div class="product-symbol meter-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 30V18M16 30V10M25 30V15M34 30V6"/></svg></div><h3>Meterry</h3></div>
+            <p class="product-tagline">Turn every AI run into accountable revenue.</p>
+            <p class="product-description">A usage-metering plane for LLM APIs, agent SaaS, workflows, and subscription overages—with real-time controls and audit-ready billing evidence.</p>
+            <ul class="capability-list" aria-label="Meterry capabilities"><li>Event-based metering</li><li>Versioned pricing rules</li><li>Limits, credits, and overages</li><li>Auditable invoice lines</li></ul>
+            <a class="product-link" href="https://meterry.com/" target="_blank" rel="noopener">Explore Meterry <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="product-visual meter-visual" aria-hidden="true">
+            <div class="meter-top"><span>LIVE USAGE</span><i></i></div>
+            <div class="meter-number"><small>Rated this cycle</small><strong>$12,482<sup>.06</sup></strong></div>
+            <div class="meter-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="meter-foot"><span>Events <b>2.8M</b></span><span>Margin <b>68.4%</b></span></div>
+          </div>
+        </article>
+
+        <article class="product product-learn">
+          <div class="product-index">03 / TECHNICAL EDUCATION</div>
+          <div class="product-content">
+            <div class="product-name"><div class="product-symbol learn-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="m6 11 14-5 14 5-14 5-14-5Z"/><path d="M10 14v10c5 4 15 4 20 0V14"/><path d="M34 11v12"/></svg></div><h3>SciMigo</h3></div>
+            <p class="product-tagline">Developer education for technologies that are hard to teach.</p>
+            <p class="product-description">Source-grounded technical courseware with executable labs, deterministic visuals, narration, and visible provenance—built for serious engineering subjects.</p>
+            <div class="course-list" aria-label="Featured subjects"><div><span>Temporal</span><strong>Durable Execution</strong></div><div><span>Restate</span><strong>Durable Agents</strong></div><div><span>Apache Flink</span><strong>Stateful Stream Processing</strong></div></div>
+            <a class="product-link" href="https://scimigo.com/" target="_blank" rel="noopener">Explore SciMigo <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="product-visual learn-visual" aria-hidden="true">
+            <div class="lesson-label">SYSTEMS / 03</div>
+            <svg viewBox="0 0 420 250"><path class="lesson-line" d="M42 64h98l40 54h82l38-52h78"/><path class="lesson-line lesson-line-two" d="M42 190h82l56-72"/><circle cx="42" cy="64" r="8"/><circle cx="180" cy="118" r="11"/><circle cx="300" cy="66" r="8"/><circle cx="378" cy="66" r="8"/><circle cx="42" cy="190" r="8"/><circle cx="124" cy="190" r="8"/><text x="27" y="40">event</text><text x="153" y="153">state</text><text x="279" y="40">effect</text><text x="343" y="101">result</text></svg>
+            <div class="lesson-foot"><span>Built with <b>Straightedge</b></span><span>Deterministic SVG</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="shell about-grid">
+        <div><p class="eyebrow eyebrow-light"><span></span> About uuBright</p><h2>Built by engineers,<br>for engineers.</h2></div>
+        <div class="about-copy">
+          <p>We work on problems where deep technical knowledge matters—from operating and monetizing AI systems reliably to explaining complex software clearly enough that developers can use it.</p>
+          <p>Our products are connected by a simple belief: trustworthy systems expose how they work. That means observable infrastructure, traceable usage, and learning materials grounded in inspectable sources.</p>
+          <div class="principles"><div><span>01</span><strong>Build for clarity</strong></div><div><span>02</span><strong>Make evidence visible</strong></div><div><span>03</span><strong>Respect the hard parts</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="shell contact-inner"><p class="eyebrow"><span></span> Work with us</p><h2>Building something technically ambitious?</h2><p>We’re always interested in thoughtful conversations about AI infrastructure, usage economics, and developer learning.</p><a class="button button-primary" href="mailto:sales@uubright.com">sales@uubright.com <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <a class="wordmark footer-mark" href="#top" aria-label="uuBright home"><span class="wordmark-logo"><img src="/assets/uubright-mark.svg" alt=""></span><span>uuBright</span></a>
+      <div class="footer-links"><a href="https://uuroute.ai/" target="_blank" rel="noopener">uuRoute ↗</a><a href="https://meterry.com/" target="_blank" rel="noopener">Meterry ↗</a><a href="https://scimigo.com/" target="_blank" rel="noopener">SciMigo ↗</a></div>
+      <p>© 2026 uuBright, Inc.</p>
+    </div>
+  </footer>
 </body>
 </html>
