@@ -1,0 +1,5 @@
+# Public content is available to search and AI search crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://uubright.com/sitemap.xml

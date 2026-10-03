@@ -1,5 +1,48 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MyMedia Photos privacy policy — uuBright</title><meta name="description" content="How MyMedia Photos handles local photos, Google Drive permissions, credentials, and optional external services."><link rel="canonical" href="https://uubright.com/mymedia/privacy/"><meta name="theme-color" content="#f7f7f2"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/mymedia/style.css"></head><body>
-<a class="skip" href="#main">Skip to content</a><header class="shell"><a class="brand" href="/mymedia/"><img src="/assets/uubright-mark.svg" alt=""><span>MyMedia Photos<small>by uuBright</small></span></a><nav aria-label="Main navigation"><a href="/mymedia/">Product</a><a href="mailto:weidongshao@gmail.com">Contact</a></nav></header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f7f2"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/mymedia/style.css">
+<title>MyMedia Photos Privacy Policy — uuBright</title>
+<meta name="description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
+<link rel="canonical" href="https://uubright.com/mymedia/privacy/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="uuBright">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MyMedia Photos Privacy Policy — uuBright">
+<meta property="og:description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
+<meta property="og:url" content="https://uubright.com/mymedia/privacy/">
+<meta property="og:image" content="https://uubright.com/mymedia/social.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MyMedia Photos by uuBright: Your photos. Your folders. Your Mac.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MyMedia Photos Privacy Policy — uuBright"><meta name="twitter:description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
+<meta name="twitter:image" content="https://uubright.com/mymedia/social.png">
+<link rel="alternate" type="text/plain" title="Site summary for AI tools" href="/llms.txt">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://uubright.com/mymedia/privacy/#webpage",
+      "url": "https://uubright.com/mymedia/privacy/",
+      "name": "MyMedia Photos Privacy Policy \u2014 uuBright",
+      "description": "How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.",
+      "isPartOf": {
+        "@id": "https://uubright.com/#website"
+      },
+      "publisher": {
+        "@id": "https://uubright.com/#organization"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://uubright.com/mymedia/#app"
+      }
+    }
+  ]
+}
+</script>
+</head><body>
+<a class="skip" href="#main">Skip to content</a><header class="shell"><a class="brand" href="/mymedia/"><img src="/assets/uubright-mark.svg" width="38" height="34" alt=""><span>MyMedia Photos<small>by uuBright</small></span></a><nav aria-label="Main navigation"><a href="/mymedia/">Product</a><a href="mailto:weidongshao@gmail.com">Contact</a></nav></header>
 <main id="main" class="policy shell"><p class="eyebrow">MyMedia Photos · by uuBright</p><h1>Privacy policy</h1><p class="updated">Effective October 3, 2026</p><p class="intro">MyMedia Photos is a local-first Mac photo utility provided by uuBright. Your library is indexed and analyzed on your Mac. Connecting an external service is optional.</p><aside>This policy covers MyMedia Photos, its Google Drive integration currently in testing, and this product website. The app is not yet available as a public download.</aside>
 <h2>Local photos and analysis</h2><p>When you add a folder, the app reads supported photos and creates a local index. Depending on the features you use, this includes file paths, file sizes and dates, content hashes, capture dates, camera details, GPS coordinates, recognized text, content labels, face thumbnails and embeddings, and names or labels you assign. Photo previews, editing renditions, settings, and operation history are also stored locally.</p><p>Local indexing, OCR, classification, face analysis, and editing run on your Mac. These functions do not send your library to uuBright. Face embeddings and associated labels remain local. The app indexes files in place; edits save separate copies. Organizing files or moving them to Trash requires your action.</p>
 <h2 id="google-drive">Google Drive access</h2><p>If you connect Google Drive, Google handles sign-in and asks you to grant the <code>drive.readonly</code> permission. This permits the app to see and download all files in your Drive. Folder selection limits what MyMedia processes, not the account-wide scope of Google's permission.</p><p>The integration requests file and folder metadata to display your Drive, including names, identifiers, file types, sizes, modification times, and available checksums or revisions. It downloads the original file you explicitly select to a local destination you choose. The app may display account information returned by Google. It does not modify, delete, or upload files in Drive.</p><p>Drive API requests go directly between your Mac and Google. uuBright does not receive your Google credentials, Drive file contents, or Drive listing through an application server. If you add the download folder as a local photo source, photos in that folder are indexed and analyzed as described above.</p><p>Access tokens are used by the app's main process. Persistent refresh credentials are encrypted locally using Electron's operating-system-backed secure storage. They are not exposed to the photo page in the renderer.</p><p>MyMedia's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used to provide the user-facing photo features described here, not for advertising, sale, or training generalized AI or machine-learning models.</p>

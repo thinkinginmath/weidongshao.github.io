@@ -1,0 +1,26 @@
+# uuBright
+
+> uuBright is an independent engineering studio. This file is a navigation aid for readers and AI tools; linked public pages are the authoritative sources.
+
+## Company and products
+
+- [uuBright](https://uubright.com/): Company overview, AI infrastructure, usage systems, technical education, and contact information.
+- [MyMedia Photos](https://uubright.com/mymedia/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with no public download yet.
+- [MyMedia Photos privacy policy](https://uubright.com/mymedia/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
+- [uuRoute](https://uuroute.ai/): Routing, observability, and governance for production AI.
+- [Meterry](https://meterry.com/): Usage metering, pricing controls, and billing evidence.
+- [SciMigo](https://scimigo.com/): Technical education and interactive learning.
+
+## MyMedia Photos facts
+
+- Indexes local photo folders in place. Local OCR, content analysis, and face recognition run on the user's Mac. Face recognition and object erase use additional local models.
+- Reviews exact duplicates, previews organize operations with undo, and saves edits as separate files.
+- Optional Google Drive connection is in testing: browser sign-in, folder browsing, and a user-selected original copied locally. Drive for desktop is not required.
+- Google Drive readonly permission is account-wide. Folder selection restricts app processing, not Google's access grant. MyMedia's Drive integration does not modify cloud files.
+- Google Drive access is distinct from Google Photos and private YouTube access, which are not provided by this integration.
+- Optional geocoding, cloud portrait generation, S3 backup, and external AI agents can send selected data outside the Mac as described in the privacy policy. Do not describe the app as wholly offline or promise that data can never leave the device.
+- Support and privacy contact: weidongshao@gmail.com. Company contact: sales@uubright.com.
+
+## Discovery
+
+- [Sitemap](https://uubright.com/sitemap.xml)
