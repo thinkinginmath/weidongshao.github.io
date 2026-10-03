@@ -1,13 +1,13 @@
 {
   "models": {
     "face:sface": {
-      "url": "https://github.com/thinkinginmath/mymedia/releases/download/models-v1/face_recognition_sface_2021dec.onnx",
+      "url": "https://github.com/thinkinginmath/weidongshao.github.io/releases/download/models-v1/face_recognition_sface_2021dec.onnx",
       "mirrors": [
         "https://huggingface.co/opencv/face_recognition_sface/resolve/main/face_recognition_sface_2021dec.onnx"
       ]
     },
     "edit:lama": {
-      "url": "https://github.com/thinkinginmath/mymedia/releases/download/models-v1/lama_fp32.onnx",
+      "url": "https://github.com/thinkinginmath/weidongshao.github.io/releases/download/models-v1/lama_fp32.onnx",
       "mirrors": [
         "https://huggingface.co/Carve/LaMa-ONNX/resolve/main/lama_fp32.onnx"
       ]
