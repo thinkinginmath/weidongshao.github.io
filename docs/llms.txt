@@ -13,13 +13,19 @@
 
 ## MyMedia Photos facts
 
+- Requires macOS 14 or later; Apple Silicon is recommended. ONNX-backed visual search, face embeddings and object erase are unavailable on Intel Macs; broader Intel acceptance testing is pending.
+- Test builds include collections, trips and events, and separate read-only Apple Photos browsing.
+- Guided iPhone USB imports use Apple Image Capture. Verified local folder copies are not encrypted and never delete phone assets.
+- Optional experimental cloud backup requires Google sign-in and a recovery phrase. File contents and metadata are encrypted on the Mac before incremental upload; the server still sees account identity, ciphertext sizes and timing. Keep another copy. Cloud storage allowances and pricing have not been announced.
+- Signed test builds are available by email request. Notarization and public-release acceptance remain pending.
+
 - Indexes local photo folders in place. Local OCR, content analysis, and face recognition run on the user's Mac. Face recognition and object erase use additional local models.
 - Reviews exact duplicates, previews organize operations with undo, and saves edits as separate files.
 - Optional Google Drive connection is in testing: browser sign-in, folder browsing, and a user-selected original copied locally. Drive for desktop is not required.
 - Google Drive readonly permission is account-wide. Folder selection restricts app processing, not Google's access grant. MyMedia's Drive integration does not modify cloud files.
 - Google Drive access is distinct from Google Photos and private YouTube access, which are not provided by this integration.
-- Optional geocoding, cloud portrait generation, S3 backup, and external AI agents can send selected data outside the Mac as described in the privacy policy. Do not describe the app as wholly offline or promise that data can never leave the device.
-- Support and privacy contact: weidongshao@gmail.com. Company contact: sales@uubright.com.
+- Optional geocoding, cloud portrait generation, S3 folder copies (without MyMedia client-side encryption or restore), and external AI agents can send selected data outside the Mac as described in the privacy policy. Do not describe the app as wholly offline or promise that data can never leave the device.
+- Support and privacy contact: david.shao@uubright.com. Company contact: sales@uubright.com.
 
 ## Discovery
 
