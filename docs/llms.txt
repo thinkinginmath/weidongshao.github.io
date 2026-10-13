@@ -5,8 +5,8 @@
 ## Company and products
 
 - [uuBright](https://uubright.com/): Company overview, AI infrastructure, usage systems, technical education, and contact information.
-- [MyMedia Photos](https://uubright.com/mymedia/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with no public download yet.
-- [MyMedia Photos privacy policy](https://uubright.com/mymedia/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
+- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with no public download yet.
+- [MyMedia Photos privacy policy](https://photos.uubright.com/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
 - [uuRoute](https://uuroute.ai/): Routing, observability, and governance for production AI.
 - [Meterry](https://meterry.com/): Usage metering, pricing controls, and billing evidence.
 - [SciMigo](https://scimigo.com/): Technical education and interactive learning.
@@ -33,3 +33,8 @@
 ## Discovery
 
 - [Sitemap](https://uubright.com/sitemap.xml)
+
+- [Product facts](https://photos.uubright.com/product-facts/): Current version 0.1.0 build 66, platform, verified boundaries and known issues.
+- [Mac beta](https://photos.uubright.com/download/): Latest build details and availability.
+- [Exact duplicate guide](https://photos.uubright.com/guides/exact-duplicates/): Keeper selection and space estimates.
+- [iPhone backup guide](https://photos.uubright.com/guides/iphone-backup/): Import completeness and Live Photo resources.

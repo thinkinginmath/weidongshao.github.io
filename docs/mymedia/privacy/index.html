@@ -1,46 +1,56 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f7f2"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/mymedia/style.css">
 <title>MyMedia Photos Privacy Policy — uuBright</title>
 <meta name="description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
-<link rel="canonical" href="https://uubright.com/mymedia/privacy/">
+<link rel="canonical" href="https://photos.uubright.com/privacy/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:site_name" content="uuBright">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:title" content="MyMedia Photos Privacy Policy — uuBright">
 <meta property="og:description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
-<meta property="og:url" content="https://uubright.com/mymedia/privacy/">
-<meta property="og:image" content="https://uubright.com/mymedia/social.png">
+<meta property="og:url" content="https://photos.uubright.com/privacy/">
+<meta property="og:image" content="https://photos.uubright.com/social.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="MyMedia Photos by uuBright: Your photos. Your folders. Your Mac.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MyMedia Photos Privacy Policy — uuBright"><meta name="twitter:description" content="How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.">
-<meta name="twitter:image" content="https://uubright.com/mymedia/social.png">
+<meta name="twitter:image" content="https://photos.uubright.com/social.jpg">
 <link rel="alternate" type="text/plain" title="Site summary for AI tools" href="/llms.txt">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://uubright.com/mymedia/privacy/#webpage",
-      "url": "https://uubright.com/mymedia/privacy/",
+      "@id": "https://photos.uubright.com/privacy/#webpage",
+      "url": "https://photos.uubright.com/privacy/",
       "name": "MyMedia Photos Privacy Policy \u2014 uuBright",
       "description": "How MyMedia Photos handles local photos, face analysis, Google Drive access, credentials, retention, and optional external services.",
       "isPartOf": {
-        "@id": "https://uubright.com/#website"
+        "@id": "https://photos.uubright.com/#website"
       },
       "publisher": {
         "@id": "https://uubright.com/#organization"
       },
       "inLanguage": "en",
       "about": {
-        "@id": "https://uubright.com/mymedia/#app"
+        "@id": "https://photos.uubright.com/#app"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://photos.uubright.com/#website",
+      "url": "https://photos.uubright.com/",
+      "name": "MyMedia Photos"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://uubright.com/#organization",
+      "name": "uuBright",
+      "url": "https://uubright.com/"
     }
   ]
-}
-</script>
+}</script>
 <script src="/mymedia/analytics.js" defer></script>
 </head><body>
 <a class="skip" href="#main">Skip to content</a><header class="shell"><a class="brand" href="/mymedia/"><img src="/assets/uubright-mark.svg" width="38" height="34" alt=""><span>MyMedia Photos<small>by uuBright</small></span></a><nav aria-label="Main navigation"><a href="/mymedia/">Product</a><a href="mailto:david.shao@uubright.com">Contact</a></nav></header>
@@ -54,6 +64,6 @@
 <h2>Optional services and sharing</h2><p>These features send data outside your Mac only when you choose to use them:</p><ul><li><strong>Place-name lookup:</strong> coordinates are sent to Apple's geocoding service to resolve place names.</li><li><strong>Cloud portrait generation:</strong> a selected portrait and your script are sent to D-ID using your own API key. That provider processes the request under its own terms and privacy policy.</li><li><strong>S3 folder copies:</strong> files from the folder you select are uploaded to your configured AWS S3 destination using your AWS CLI credentials. This feature does not provide MyMedia client-side encryption or restore.</li><li><strong>External AI agents:</strong> if you enable local MCP access and give an agent the bearer token, it can read information exposed by the app's tools and propose cleanup plans. What that agent sends to its provider depends on your agent configuration. Applying a proposed cleanup requires an in-app human action.</li></ul><p>Photos downloaded from Drive become local files. Choosing an optional sharing or backup feature for those files can send them to the selected service. The Drive connection itself does not initiate those uploads. Review the destination and its data policy before using an external service.</p>
 <h2>Optional model downloads</h2><p>When you click a model download button, the app requests a small URL manifest from uubright.com, then downloads the chosen model from GitHub Releases or its upstream Hugging Face host. Those providers receive ordinary connection information such as your IP address. These requests do not send your photos, face embeddings, Google credentials, or Drive listing. Downloads require no model-host account, are checked against a SHA-256 checksum pinned in the app, and are stored locally on your Mac. Source attribution, licenses, and checksums accompany our <a href="https://github.com/thinkinginmath/weidongshao.github.io/releases/tag/models-v1">model mirror release</a>.</p>
 <h2>Retention, disconnect, and deletion</h2><p>Originals and downloaded copies remain in your selected folders until you remove them. Local indexes, cached previews, face data, settings, and operation history persist in the app's local data directory until cleared through available app controls or removed from your Mac. Removing a library source is not a promise to erase every cached or indexed record.</p><p>Disconnecting Google Drive cancels active Drive operations and removes locally stored sign-in credentials. It does not delete downloaded copies or their local analysis. To revoke the Google-side grant, remove MyMedia Photos from your <a href="https://myaccount.google.com/connections">Google Account connections</a>. Google retains its own service records according to its policies.</p><p>uuBright cannot remotely erase files stored only on your Mac. If you explicitly use encrypted cloud backup, we hold encrypted backup objects as described above. Contact us for help locating and clearing app data on your Mac. If you use an external generation, backup, or agent service, manage retention and deletion with that provider as well.</p>
-<h2>Website and support</h2><p>This product website uses GitHub Pages and Cloudflare delivery and security services. Cloudflare may process connection information and request logs under its <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>. Cloudflare also adds a functional email-address decoding script to protect displayed addresses from automated collection. Google Analytics 4 is optional on these product pages and loads only after you accept website analytics. If you decline, the Google tag is not loaded. We have not added advertising pixels, session recording, signup forms, or third-party font requests. GitHub may process connection information such as IP addresses and request logs to operate the hosting service under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p><p>If you email support, we receive your email address and the message or attachments you send. We use them to respond and investigate the issue. Avoid sending personal photos, tokens, or credentials unless they are necessary and you choose to share them. Support correspondence may be retained for follow-up; you can request deletion.</p>
+<h2>Website and support</h2><p>The primary product website at photos.uubright.com uses Cloudflare Pages and Cloudflare delivery and security services. The uuBright company site and legacy product URL use GitHub Pages. Cloudflare may process connection information and request logs under its <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>. Cloudflare also adds a functional email-address decoding script to protect displayed addresses from automated collection. Google Analytics 4 is optional on these product pages and loads only after you accept website analytics. If you decline, the Google tag is not loaded. We have not added advertising pixels, session recording, signup forms, or third-party font requests. GitHub may process connection information such as IP addresses and request logs to operate the hosting service under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p><p>If you email support, we receive your email address and the message or attachments you send. We use them to respond and investigate the issue. Avoid sending personal photos, tokens, or credentials unless they are necessary and you choose to share them. Support correspondence may be retained for follow-up; you can request deletion.</p>
 <h2>Security and policy changes</h2><p>Credentials are protected with local secure storage, and Google requests use HTTPS. Access to your Mac, backups, or an agent you authorize can affect the privacy of local data. No storage or transmission system can guarantee absolute security.</p><p>We will update this policy when the app's data handling changes and revise the effective date. Material changes to permissions or external processing will be explained before you use the affected feature.</p>
-<h2>Optional website analytics</h2><p>With your permission, Google Analytics measures page visits, scrolling, outgoing links, screenshot views, beta email-link clicks and future download-link clicks. It uses analytics cookies to distinguish browsers and receives information such as page URLs, campaign tags, browser and device information, and connection information. Google processes this data under its <a href="https://policies.google.com/privacy">privacy policy</a>. Google Signals, user-provided data collection and advertising personalization are disabled for this property. We do not send app activity, library searches, filenames, photos, people labels or backup details to website analytics.</p><p>Your analytics choice is stored in this browser for 90 days. Use “Analytics preferences” in the footer to change it. Declining after accepting reloads the page without the tag and removes this site’s Google Analytics cookies; it does not erase data already received by Google. Email-link clicks indicate interest, not a completed beta request. Analytics blockers and declined consent can make counts incomplete.</p><h2>Contact</h2><p>For privacy questions, support, or deletion requests for correspondence held by uuBright, email <a href="mailto:david.shao@uubright.com">david.shao@uubright.com</a>. Product homepage: <a href="https://uubright.com/mymedia/">uubright.com/mymedia</a>.</p></main><footer class="shell"><a href="/mymedia/">MyMedia Photos</a><div><a href="/">uuBright</a><a href="mailto:david.shao@uubright.com">Support</a><span>© 2026 uuBright</span></div></footer></body></html>
+<h2>Optional website analytics</h2><p>With your permission, Google Analytics measures page visits, scrolling, outgoing links, screenshot views, beta email-link clicks and future download-link clicks. It uses analytics cookies to distinguish browsers and receives information such as page URLs, campaign tags, browser and device information, and connection information. Google processes this data under its <a href="https://policies.google.com/privacy">privacy policy</a>. Google Signals, user-provided data collection and advertising personalization are disabled for this property. We do not send app activity, library searches, filenames, photos, people labels or backup details to website analytics.</p><p>Your analytics choice is stored in this browser for 90 days. Use “Analytics preferences” in the footer to change it. Declining after accepting reloads the page without the tag and removes this site’s Google Analytics cookies; it does not erase data already received by Google. Email-link clicks indicate interest, not a completed beta request. Analytics blockers and declined consent can make counts incomplete.</p><h2>Contact</h2><p>For privacy questions, support, or deletion requests for correspondence held by uuBright, email <a href="mailto:david.shao@uubright.com">david.shao@uubright.com</a>. Product homepage: <a href="https://photos.uubright.com/">photos.uubright.com</a>.</p></main><footer class="shell"><a href="/mymedia/">MyMedia Photos</a><div><a href="/">uuBright</a><a href="mailto:david.shao@uubright.com">Support</a><span>© 2026 uuBright</span></div></footer></body></html>
