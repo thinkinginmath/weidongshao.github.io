@@ -5,7 +5,7 @@
 ## Company and products
 
 - [uuBright](https://uubright.com/): Company overview, AI infrastructure, usage systems, technical education, and contact information.
-- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with no public download yet.
+- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with public Apple Silicon beta build 66 available.
 - [MyMedia Photos privacy policy](https://photos.uubright.com/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
 - [uuRoute](https://uuroute.ai/): Routing, observability, and governance for production AI.
 - [Meterry](https://meterry.com/): Usage metering, pricing controls, and billing evidence.
@@ -17,7 +17,7 @@
 - Test builds include collections, trips and events, and separate read-only Apple Photos browsing.
 - Guided iPhone USB imports use Apple Image Capture. Verified local folder copies are not encrypted and never delete phone assets.
 - Optional experimental cloud backup requires Google sign-in and a recovery phrase. File contents and metadata are encrypted on the Mac before incremental upload; the server still sees account identity, ciphertext sizes and timing. Keep another copy. Cloud storage allowances and pricing have not been announced.
-- Signed test builds are available by email request. The Apple Silicon test build is notarized; broader public-release acceptance remains pending.
+- Version 0.1.0, build 66 is publicly downloadable for Apple Silicon. It is Developer ID signed and notarized by Apple; broader release acceptance remains pending.
 
 - Indexes local photo folders in place. Local OCR, content analysis, and face recognition run on the user's Mac. Face recognition and object erase use additional local models.
 - Reviews exact duplicates, previews organize operations with undo, and saves edits as separate files.
