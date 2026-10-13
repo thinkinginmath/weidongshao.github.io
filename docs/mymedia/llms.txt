@@ -25,7 +25,7 @@
 - Google Drive readonly permission is account-wide. Folder selection restricts app processing, not Google's access grant. MyMedia's Drive integration does not modify cloud files.
 - Google Drive access is distinct from Google Photos, which are not provided by this integration.
 - Optional geocoding, cloud portrait generation, S3 folder copies (without MyMedia client-side encryption or restore), and external AI agents can send selected data outside the Mac as described in the privacy policy. Do not describe the app as wholly offline or promise that data can never leave the device.
-- Support and privacy contact: david.shao@uubright.com. Company contact: sales@uubright.com.
+- Support and privacy contact: support@uubright.com. Company contact: sales@uubright.com.
 
 - Default daily update check: no app-generated identifier; api.scimigo.com with a uubright.com static fallback. Disable in About. Aggregate requests may inform usage counts.
 - Optional Apple Messages attachment browsing requires macOS Full Disk Access but does not read conversation databases or upload attachments.
