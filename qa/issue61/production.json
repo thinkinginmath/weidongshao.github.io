@@ -96,5 +96,13 @@
   ],
   "analyticsTagsPresent": false,
   "signup": "explicitly pending; no form or addresses collected",
-  "publicArtifact": "full readback SHA-256 matched"
+  "publicArtifact": "full readback SHA-256 matched",
+  "finalRecording": {
+    "durationSeconds": 38.416667,
+    "bytes": 999899,
+    "sha256": "08ad8c7177e9676a668345f3ec8fabca1d582841c7b00915491fdd41d65e8e16",
+    "fullReadback": "matches repository video",
+    "homepageCaption": "38-second build 80 walkthrough",
+    "credits": "actual app recording; picker navigation and inter-step waits cut"
+  }
 }
