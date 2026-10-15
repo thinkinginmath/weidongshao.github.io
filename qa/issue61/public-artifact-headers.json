@@ -1,0 +1,9 @@
+{
+  "url": "https://pub-ae0e951cb13d4628913ced2bc423d839.r2.dev/mymedia/releases/build80/MyMedia-Photos-0.1.0-build80-arm64.dmg",
+  "status": 200,
+  "contentLength": 216314408,
+  "etag": "e598171b5fc183d27eb0de25e417b1c4",
+  "localArtifactMD5": "e598171b5fc183d27eb0de25e417b1c4",
+  "localArtifactSHA256": "3787b0b3f48116622aedeb52894c5b84a75cb84d74141332ecefd30bef89bb37",
+  "note": "Public Content-Length and single-part ETag match the notarized local artifact. Full HTTP readback SHA-256 is recorded separately when complete."
+}

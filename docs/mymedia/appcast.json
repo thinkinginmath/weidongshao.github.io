@@ -1,5 +1,5 @@
 {
   "version": "0.1.0",
   "url": "https://photos.uubright.com/download/",
-  "notes": "Apple Silicon beta build 66: simplified exact-duplicate review controls. Developer ID signed and notarized."
+  "notes": "Apple Silicon beta build 80: organize preview across views, redesigned header and scope controls, destination-space review and offline-source notices. Developer ID signed and notarized."
 }
