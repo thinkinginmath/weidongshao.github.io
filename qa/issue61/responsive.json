@@ -1,0 +1,82 @@
+[
+  {
+    "h1": "Choose a keeper. Clear the extra copies.",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      },
+      {
+        "loaded": true,
+        "src": "/mymedia/screenshots/duplicates-build80.jpg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "Exact duplicate photo review on Mac | MyMedia Photos",
+    "width": 390
+  },
+  {
+    "h1": "Back up imported iPhone photos before clearing space.",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      },
+      {
+        "loaded": true,
+        "src": "/mymedia/screenshots/iphone-backup-build80.jpg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "Back up imported iPhone photos on Mac | MyMedia Photos",
+    "width": 390
+  },
+  {
+    "h1": "MyMedia Photos: what the current beta does.",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "MyMedia Photos product facts, privacy and current build",
+    "width": 390
+  },
+  {
+    "h1": "Privacy policy",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "MyMedia Photos Privacy Policy — uuBright",
+    "width": 390
+  },
+  {
+    "h1": "MyMedia Photos 0.1.0 · build 80.",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "MyMedia Photos Mac beta — version 0.1.0, build 80",
+    "width": 390
+  },
+  {
+    "h1": "Sample photos. Real app screens.",
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/uubright-mark.svg"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "Sample photo credits and walkthrough | MyMedia Photos",
+    "width": 390
+  }
+]

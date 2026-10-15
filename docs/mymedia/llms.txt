@@ -5,11 +5,13 @@
 ## Company and products
 
 - [uuBright](https://uubright.com/): Company overview, AI infrastructure, usage systems, technical education, and contact information.
-- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with public Apple Silicon beta build 66 available.
+- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with public Apple Silicon beta build 80 available.
 - [MyMedia Photos privacy policy](https://photos.uubright.com/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
 - [uuRoute](https://uuroute.ai/): Routing, observability, and governance for production AI.
 - [Meterry](https://meterry.com/): Usage metering, pricing controls, and billing evidence.
 - [SciMigo](https://scimigo.com/): Technical education and interactive learning.
+
+> MyMedia makes the photo folders you already have searchable and manageable, without creating another library or taking control of your originals.
 
 ## MyMedia Photos facts
 
@@ -17,7 +19,7 @@
 - Test builds include collections, trips and events, and separate read-only Apple Photos browsing.
 - Guided iPhone USB imports use Apple Image Capture. Verified local folder copies are not encrypted and never delete phone assets.
 - Optional experimental cloud backup requires Google sign-in and a recovery phrase. File contents and metadata are encrypted on the Mac before incremental upload; the server still sees account identity, ciphertext sizes and timing. Keep another copy. Cloud storage allowances and pricing have not been announced.
-- Version 0.1.0, build 66 is publicly downloadable for Apple Silicon. It is Developer ID signed and notarized by Apple; broader release acceptance remains pending.
+- Version 0.1.0, build 80 is publicly downloadable for Apple Silicon. It is Developer ID signed and notarized by Apple; broader release acceptance remains pending.
 
 - Indexes local photo folders in place. Local OCR, content analysis, and face recognition run on the user's Mac. Face recognition and object erase use additional local models.
 - Reviews exact duplicates, previews organize operations with undo, and saves edits as separate files.
@@ -34,9 +36,12 @@
 
 - [Sitemap](https://uubright.com/sitemap.xml)
 
-- [Product facts](https://photos.uubright.com/product-facts/): Current version 0.1.0 build 66, platform, verified boundaries and known issues.
+- [Product facts](https://photos.uubright.com/product-facts/): Current version 0.1.0 build 80, platform, verified boundaries and known issues.
 - [Mac beta](https://photos.uubright.com/download/): Latest build details and availability.
 - [Exact duplicate guide](https://photos.uubright.com/guides/exact-duplicates/): Keeper selection and space estimates.
 - [iPhone backup guide](https://photos.uubright.com/guides/iphone-backup/): Import completeness and Live Photo resources.
 
 - [MyMedia sitemap](https://photos.uubright.com/sitemap.xml): Product pages and practical guides.
+
+- [Manage external-drive photo folders](https://photos.uubright.com/guides/external-drives/): In-place browsing, verified gathering, disconnected sources and organize review.
+- Website: no analytics scripts. Optional confirmed release-update email signup is separate from desktop use. Update-check request counts are not unique daily active users.

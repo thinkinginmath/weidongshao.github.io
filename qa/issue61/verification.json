@@ -1,0 +1,48 @@
+{
+  "build": 80,
+  "commit": "8df967ada8afd198c88dff8f76e27406f4644d52",
+  "appNotary": {
+    "message": "Processing complete",
+    "status": "Accepted",
+    "id": "5d897a60-5dd2-4436-a9ab-7d67f57dd47e"
+  },
+  "dmgNotary": {
+    "status": "Accepted",
+    "id": "40727823-b688-4218-9fbc-c0053a77fe17",
+    "message": "Processing complete"
+  },
+  "staplerApp": "passed",
+  "staplerDMG": "passed",
+  "diskImageVerify": "passed",
+  "packagedSmoke": {
+    "nativeIndexAndQuery": "passed",
+    "driveConfigured": true,
+    "normalQuit": true,
+    "originalUnchanged": true
+  },
+  "networkFreeRegression": "passed",
+  "sampleLibrary": {
+    "distinctPublicDomainPhotos": 24,
+    "deliberateExactCopies": 4,
+    "source": "NASA U.S. astronaut photographs; credits manifest included",
+    "drive": "read-only mounted disk image, not physical USB",
+    "actualApp": "signed build 80, isolated userData",
+    "operationsApplied": false
+  },
+  "walkthrough": {
+    "durationSeconds": 39.958,
+    "format": "edited still-screen tour; not continuous recording"
+  },
+  "siteQA": {
+    "localLinks": "8 pages; no broken local links",
+    "structuredData": "JSON parsed",
+    "mobileWidths": 390,
+    "overflow": "none observed",
+    "analytics": "no analytics script or external font tag"
+  },
+  "pending": [
+    "Buttondown owner account and newsletter address/settings",
+    "10\u201320 outside-user task validation",
+    "continuous interaction recording if required instead of edited screen tour"
+  ]
+}

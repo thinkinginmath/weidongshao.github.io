@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "build": 80,
+  "sourceCommit": "8df967ada8afd198c88dff8f76e27406f4644d52",
+  "date": "2026-10-16",
+  "architecture": "arm64",
+  "minimumMacOS": "14.0",
+  "fileName": "MyMedia-Photos-0.1.0-build80-arm64.dmg",
+  "bytes": 216314408,
+  "sha256": "3787b0b3f48116622aedeb52894c5b84a75cb84d74141332ecefd30bef89bb37",
+  "signer": "Developer ID Application: Weidong Shao (N6U79FN377)",
+  "notarization": "Accepted",
+  "downloadUrl": "https://pub-ae0e951cb13d4628913ced2bc423d839.r2.dev/mymedia/releases/build80/MyMedia-Photos-0.1.0-build80-arm64.dmg"
+}
