@@ -30,8 +30,10 @@
     "operationsApplied": false
   },
   "walkthrough": {
-    "durationSeconds": 39.958,
-    "format": "edited still-screen tour; not continuous recording"
+    "durationSeconds": 38.416667,
+    "format": "actual screen capture of build 80; folder-picker navigation and inter-step waits cut; captions beneath the app",
+    "framesCaptured": 419,
+    "sha256": "08ad8c7177e9676a668345f3ec8fabca1d582841c7b00915491fdd41d65e8e16"
   },
   "siteQA": {
     "localLinks": "8 pages; no broken local links",
@@ -42,7 +44,6 @@
   },
   "pending": [
     "Buttondown owner account and newsletter address/settings",
-    "10\u201320 outside-user task validation",
-    "continuous interaction recording if required instead of edited screen tour"
+    "10\u201320 outside-user task validation"
   ]
 }
