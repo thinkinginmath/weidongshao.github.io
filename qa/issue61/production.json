@@ -1,0 +1,100 @@
+{
+  "pagesAndAssets": [
+    {
+      "path": "/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/download/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/privacy/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/product-facts/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/guides/external-drives/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/guides/exact-duplicates/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/guides/iphone-backup/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/credits/",
+      "status": "200 text/html; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": "200 application/xml",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/llms.txt",
+      "status": "200 text/plain; charset=utf-8",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/checksums/build80.sha256",
+      "status": "200 null",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/release-build80.json",
+      "status": "200 application/json",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/screenshots/library-build80.jpg",
+      "status": "200 image/jpeg",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/screenshots/organize-plan-build80.jpg",
+      "status": "200 image/jpeg",
+      "error": null,
+      "passed": true
+    },
+    {
+      "path": "/media/walkthrough-build80.mp4",
+      "status": "200 video/mp4",
+      "error": null,
+      "passed": true
+    }
+  ],
+  "homepageExternalScripts": [
+    "<script data-cfasync=\"false\" src=\"/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\">"
+  ],
+  "analyticsTagsPresent": false,
+  "signup": "explicitly pending; no form or addresses collected",
+  "publicArtifact": "full readback SHA-256 matched"
+}
