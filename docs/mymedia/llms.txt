@@ -5,38 +5,53 @@
 ## Company and products
 
 - [uuBright](https://uubright.com/): Company overview, AI infrastructure, usage systems, technical education, and contact information.
-- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Currently in testing; a free first public release is planned, with public Apple Silicon beta build 66 available.
+- [MyMedia Photos](https://photos.uubright.com/): Local-first photo organizer for macOS, by uuBright. Public Apple Silicon beta build 80 is available; a free first public local-app release is planned.
 - [MyMedia Photos privacy policy](https://photos.uubright.com/privacy/): Local processing, Google Drive permissions, credentials, retention, external services, and contact.
 - [uuRoute](https://uuroute.ai/): Routing, observability, and governance for production AI.
 - [Meterry](https://meterry.com/): Usage metering, pricing controls, and billing evidence.
 - [SciMigo](https://scimigo.com/): Technical education and interactive learning.
 
-## MyMedia Photos facts
+> MyMedia Photos helps you understand and organize the photo archive you already own, without moving it into another library. Originals stay ordinary files in the user's folders; the app keeps its own index and settings databases on the Mac.
 
-- Requires macOS 14 or later; Apple Silicon is recommended. ONNX-backed visual search, face embeddings and object erase are unavailable on Intel Macs; broader Intel acceptance testing is pending.
-- Test builds include collections, trips and events, and separate read-only Apple Photos browsing.
-- Guided iPhone USB imports use Apple Image Capture. Verified local folder copies are not encrypted and never delete phone assets.
-- Optional experimental cloud backup requires Google sign-in and a recovery phrase. File contents and metadata are encrypted on the Mac before incremental upload; the server still sees account identity, ciphertext sizes and timing. Keep another copy. Cloud storage allowances and pricing have not been announced.
-- Version 0.1.0, build 66 is publicly downloadable for Apple Silicon. It is Developer ID signed and notarized by Apple; broader release acceptance remains pending.
+## MyMedia Photos facts (current download: version 0.1.0, build 80)
 
-- Indexes local photo folders in place. Local OCR, content analysis, and face recognition run on the user's Mac. Face recognition and object erase use additional local models.
-- Reviews exact duplicates, previews organize operations with undo, and saves edits as separate files.
-- Optional Google Drive connection is in testing: browser sign-in, folder browsing, and a user-selected original copied locally. Drive for desktop is not required.
-- Google Drive readonly permission is account-wide. Folder selection restricts app processing, not Google's access grant. MyMedia's Drive integration does not modify cloud files.
-- Google Drive access is distinct from Google Photos, which are not provided by this integration.
-- Optional geocoding, cloud portrait generation, S3 folder copies (without MyMedia client-side encryption or restore), and external AI agents can send selected data outside the Mac as described in the privacy policy. Do not describe the app as wholly offline or promise that data can never leave the device.
-- Support and privacy contact: david.shao@uubright.com. Company contact: sales@uubright.com.
+- Build 80 is publicly downloadable for Apple Silicon Macs on macOS 14 or later. It is Developer ID signed and notarized by Apple, distributed outside the Mac App Store, and still a beta. No Intel build is offered.
+- Indexes existing Mac folders and connected drives in place. Search by filename, capture date and recognized text; OCR and content labels run on the Mac.
+- Exact-duplicate review is byte-for-byte: the user chooses the keeper; extras go to the macOS Trash after review, never permanently deleted.
+- Organize folders previews dated year/month destinations and the space needed, then copies or moves only after approval; runs are journaled for undo.
+- Backup copy copies a folder to another drive, checks every file with SHA-256 and writes a receipt. Local copies are not encrypted by MyMedia.
+- iPhone in build 80: import with Apple Image Capture into a folder, then make a verified copy. MyMedia never deletes phone assets and never gives deletion advice.
+- "Bring your photos together" gathers local folders into one archive with verified copies; it does not delete sources or certify a drive as safe to erase.
+- Collections and albums are references to photos in place, not copies or backups.
+- Experimental: encrypted cloud backup, Google Drive, WeChat, Apple Messages, Apple Photos browsing, visual search and face recognition.
 
-- Default daily update check: no app-generated identifier; api.scimigo.com with a uubright.com static fallback. Disable in About. Aggregate requests may inform usage counts.
-- Optional Apple Messages attachment browsing requires macOS Full Disk Access but does not read conversation databases or upload attachments.
+## Coming in the next beta build (not in build 80; not downloadable yet)
+
+- Guided iPhone flow (Import, Organize, Back up) with direct copy-only USB import of photos, videos and Live Photo companions; an organize step with undo; a coverage check that compares names and sizes only (a heuristic, not proof of identical files, never deletion advice).
+- Similar-shot review with a Compare view: groups repeated takes and suggests a keeper; the user decides and nothing is removed automatically.
+- Check or restore a Backup copy against its receipt.
+- Space view ("Free up space"), drive setup wizard, drive card and drive survey, suggested albums from trips and events, videos browsable in Photos, dark mode.
+
+## Privacy and network
+
+- Local analysis does not upload photos. Do not describe the app as wholly offline: a daily update check (no app-generated identifier) requests appcast.json from api.scimigo.com, the owner's server, with a static uubright.com fallback; it can be switched off in About.
+- Opt-in network features: place-name lookup (coordinates only, Apple geocoder); digital human generation (one portrait and a script to D-ID with the user's own key); S3 folder copies with the user's AWS CLI (not a backup: no MyMedia metadata, client-side encryption or restore); encrypted cloud backup; Google Drive.
+- Encrypted cloud backup stores data in MyMedia's storage via backup.uubright.com, not in Google Drive; Google is used only to sign in. File contents, filenames and metadata are encrypted on the Mac; the service sees account identity, opaque keys, ciphertext sizes, counts and timing. The recovery phrase never reaches the service.
+- Google Drive uses the account-wide drive.readonly permission; folder choice does not narrow it. Thumbnails come from Google's thumbnail hosts and are cached locally; originals download only when the user approves. Drive files are never moved, deleted or uploaded. Google Drive is distinct from Google Photos.
+- Apple Messages browsing needs Full Disk Access but does not read the conversation database. WeChat browsing reads local photo files read-only and does not read messages.
+- External AI agents (local MCP, bearer token) can read library information and propose cleanups or collections; only the user applies them.
+- Support and privacy contact: support@uubright.com. Company contact: sales@uubright.com.
 
 ## Discovery
 
 - [Sitemap](https://uubright.com/sitemap.xml)
 
-- [Product facts](https://photos.uubright.com/product-facts/): Current version 0.1.0 build 66, platform, verified boundaries and known issues.
+- [Product facts](https://photos.uubright.com/product-facts/): Current version 0.1.0 build 80, platform, verified boundaries, known issues and what is coming in the next beta build.
 - [Mac beta](https://photos.uubright.com/download/): Latest build details and availability.
 - [Exact duplicate guide](https://photos.uubright.com/guides/exact-duplicates/): Keeper selection and space estimates.
 - [iPhone backup guide](https://photos.uubright.com/guides/iphone-backup/): Import completeness and Live Photo resources.
 
 - [MyMedia sitemap](https://photos.uubright.com/sitemap.xml): Product pages and practical guides.
+
+- [Manage external-drive photo folders](https://photos.uubright.com/guides/external-drives/): In-place browsing, verified gathering, disconnected sources and organize review.
+- Website: no analytics scripts. Optional confirmed release-update email signup is separate from desktop use. Update-check request counts are not unique daily active users.

@@ -1,0 +1,34 @@
+{
+  "capturedAt": "2026-10-15T15:43:17.471672+00:00",
+  "publicReleaseBefore": 66,
+  "requests": [
+    {
+      "url": "https://photos.uubright.com/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://photos.uubright.com/download/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://photos.uubright.com/privacy/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://photos.uubright.com/appcast.json",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "trafficCounts": "Cloudflare UI baseline recorded before deployment; product conversion counts unavailable.",
+  "existingAnalytics": "Source currently has consent-gated GA4; latest issue61 brief overrides it with no analytics scripts.",
+  "sourceBefore": "67796d6",
+  "cloudflareBefore": {
+    "observedDate": "2026-10-16",
+    "timePrecision": "Dashboard observed during this work before publication; exact observation minute was not recorded.",
+    "window": "Last 24 hours, dashboard rolling window",
+    "uubrightZoneRequestsApprox": 2440,
+    "photosHostRequestsApprox": 1010,
+    "zoneVisits": 655,
+    "limits": "Zone visit totals are not product visits. Host request totals include assets, crawlers and errors. No download-button or completed-DMG count was exposed in this view; not inferred."
+  }
+}
