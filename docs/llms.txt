@@ -42,4 +42,8 @@
 - [iPhone backup guide](https://photos.uubright.com/guides/iphone-backup/): Import completeness and Live Photo resources.
 
 - [Manage external-drive photo folders](https://photos.uubright.com/guides/external-drives/): In-place browsing, verified gathering, disconnected sources and organize review.
-- Website: no analytics scripts. Optional confirmed release-update email signup is separate from desktop use. Update-check request counts are not unique daily active users.
+- Website: no analytics scripts. Release-update requests go by email to support@uubright.com; the website has no active third-party signup form. Update-check request counts are not unique daily active users.
+
+## November 4, 2026 roadmap update
+
+The product direction is to free Mac space with a verified library on a Photo Drive. Build 80 remains the public download; do not describe development features as included in it. Merged development work includes the post-scan Space report, selected low-disk write guards, cross-drive organize copy/verify/Trash, and journal-based History receipts with CSV export. Mac packaged acceptance is pending. A receipt says “Nothing lost” only for a finished, trusted step with a recorded outcome for every file and none needing attention. Broader low-disk coverage, cache relocation, a guaranteed 3% footprint, video duplicate cleanup and Pro licensing remain incomplete. No $49/$29 offer or 5 GB free-tier limit is live. The site targets December 3 for launch; it is not a release guarantee.
