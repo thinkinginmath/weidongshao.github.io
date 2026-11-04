@@ -32,3 +32,6 @@
 
 .space-hero-shot{max-width:900px}.space-hero-shot img{background:#fff}.space-hero-shot figcaption{margin:0;padding:18px 22px}
 .space-hero .actions{flex-direction:row;align-items:center;justify-content:center}
+
+/* Pitch refresh: shorter preview list, room for the source names. */
+.next-beta-list{padding-left:22px;font-size:19px;line-height:1.9;max-width:760px}.next-beta-list li{padding-left:6px}.source-list{max-width:100%}.space-low-disk h2{font-size:clamp(30px,3.5vw,44px)}.space-hero-shot figcaption{text-align:center}.next-build .fine a{color:#4f3a98;font-weight:600}@media(max-width:760px){.next-beta-list{font-size:17px;line-height:1.65}.next-beta-list li+li{margin-top:12px}}
