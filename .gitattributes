@@ -1,0 +1,3 @@
+# Keep unmodified upstream precompiled releases reproducible, including their
+# significant template-literal whitespace. Our own source keeps Git defaults.
+docs/reveal.js/** -whitespace

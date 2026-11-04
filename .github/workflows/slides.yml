@@ -1,0 +1,22 @@
+name: Check retained slide assets
+on:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  slides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: tools/slides/package-lock.json
+      - run: npm ci --ignore-scripts --prefix tools/slides
+      - run: npm audit --prefix tools/slides
+      - run: npm run vendor --prefix tools/slides
+      - run: git diff --exit-code -- docs/reveal.js
+      - run: python3 scripts/check-slide-assets.py
