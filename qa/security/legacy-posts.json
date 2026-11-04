@@ -1,0 +1,312 @@
+[
+  {
+    "path": "2013/01/15/el-gamal-encryption/index.html",
+    "headings": [
+      {
+        "id": "encryption",
+        "text": "Encryption"
+      },
+      {
+        "id": "thereshold-decryption",
+        "text": "Thereshold Decryption"
+      },
+      {
+        "id": "application-to-oblivious-transfer",
+        "text": "Application to Oblivious Transfer"
+      },
+      {
+        "id": "original--scheme-and-homomorphic-encryption",
+        "text": "Original  Scheme and Homomorphic Encryption"
+      },
+      {
+        "id": "setup",
+        "text": "Setup"
+      },
+      {
+        "id": "encrytion",
+        "text": "Encrytion"
+      },
+      {
+        "id": "references",
+        "text": "References"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": []
+  },
+  {
+    "path": "2013/01/15/vim-and-python/index.html",
+    "headings": [
+      {
+        "id": "vim-version-and-features",
+        "text": "VIM version and features"
+      },
+      {
+        "id": "always-use-virtual-environment",
+        "text": "Always use virtual environment"
+      },
+      {
+        "id": "create-a-development-virtual-environment",
+        "text": "Create a development virtual environment"
+      },
+      {
+        "id": "activating-a-virtual-environment",
+        "text": "Activating a virtual environment"
+      },
+      {
+        "id": "installing-python-packages",
+        "text": "Installing python packages"
+      },
+      {
+        "id": "leaving-the-virtual-environment",
+        "text": "Leaving the virtual environment"
+      },
+      {
+        "id": "vundle",
+        "text": "Vundle"
+      },
+      {
+        "id": "set-up-vundle",
+        "text": "Set up Vundle:"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": []
+  },
+  {
+    "path": "2013/02/01/fiat-shamir/index.html",
+    "headings": [
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": []
+  },
+  {
+    "path": "2013/02/09/anonymous-pay-ver-view/index.html",
+    "headings": [
+      {
+        "id": "an-implementation-of-oblivious-transfer-with-blind-ibe",
+        "text": "An implementation of Oblivious Transfer with Blind IBE"
+      },
+      {
+        "id": "oblivious-transfer",
+        "text": "Oblivious Transfer"
+      },
+      {
+        "id": "project-setup",
+        "text": "Project Setup:"
+      },
+      {
+        "id": "source-code",
+        "text": "Source Code:"
+      },
+      {
+        "id": "run-result",
+        "text": "Run Result"
+      },
+      {
+        "id": "references",
+        "text": "References"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "/assets/2013/IBE.002.jpg"
+    ]
+  },
+  {
+    "path": "2014/09/12/compass-directing-software-defined-infrastructure/index.html",
+    "headings": [
+      {
+        "id": "we-are-in-for-openstack-summit---paris",
+        "text": "We are in for OpenStack Summit - Paris"
+      },
+      {
+        "id": "overview",
+        "text": "Overview"
+      },
+      {
+        "id": "open-source-and-open-community",
+        "text": "Open-Source and Open Community"
+      },
+      {
+        "id": "major-modules",
+        "text": "Major Modules"
+      },
+      {
+        "id": "update",
+        "text": "Update:"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "https://www.youtube.com/embed/UArzko_cd5c",
+      "/assets/2014/CompassModules.png"
+    ]
+  },
+  {
+    "path": "2017/03/14/math-sum-of-triangle/index.html",
+    "headings": [
+      {
+        "id": "geometry-without-proofs",
+        "text": "Geometry without proofs?"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "https://www.youtube.com/embed/wfGiaQIL1FY"
+    ]
+  },
+  {
+    "path": "2017/03/15/math-fraction/index.html",
+    "headings": [
+      {
+        "id": "long-division-and-repeating-decimals",
+        "text": "Long division and repeating decimals"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "https://www.youtube.com/embed/-M1PznNNmpo",
+      "https://www.youtube.com/embed/FMsnuZl7tgQ"
+    ]
+  },
+  {
+    "path": "2017/03/20/math-knights-tour/index.html",
+    "headings": [
+      {
+        "id": "knights-tour-on-chess-board",
+        "text": "Knight’s tour on chess board"
+      },
+      {
+        "id": "random-move",
+        "text": "Random Move"
+      },
+      {
+        "id": "warnsdorffs-rule",
+        "text": "Warnsdorff’s Rule"
+      },
+      {
+        "id": "does-the-rule-always-work",
+        "text": "Does the rule always work?"
+      },
+      {
+        "id": "anti-warnsdorffs-rule",
+        "text": "Anti-Warnsdorff’s Rule"
+      },
+      {
+        "id": "earliest-hamilton-path-and-cycle",
+        "text": "Earliest Hamilton Path and Cycle"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "/assets/2017/low_knights.png",
+      "/assets/2017/low_trace.png",
+      "/assets/2017/high_knights.png",
+      "/assets/2017/high_trace.png",
+      "/assets/2017/full_knights_sol.png",
+      "/assets/2017/full_knights_trace.png",
+      "/assets/2017/failed_steps.png",
+      "/assets/2017/failed_trace.png",
+      "/assets/2017/anti_steps.png",
+      "/assets/2017/anti_trace.png",
+      "/assets/2017/ancient_path.png",
+      "/assets/2017/ancient_cycle.png"
+    ]
+  },
+  {
+    "path": "2017/07/05/access-google-drive-from-linux/index.html",
+    "headings": [
+      {
+        "id": "use-google-drive-api",
+        "text": "Use Google Drive API"
+      },
+      {
+        "id": "use-fuse-mount-on-linux",
+        "text": "Use FUSE mount on Linux"
+      },
+      {
+        "id": "case-1-linux-with-graphic-window-managereg-gnome",
+        "text": "Case 1: Linux with Graphic Window Manager(e.g, Gnome)"
+      },
+      {
+        "id": "case-2-headless-linux",
+        "text": "Case 2: Headless Linux"
+      },
+      {
+        "id": "clean-up",
+        "text": "Clean Up"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": [
+      "/assets/2017/gdrive1.png",
+      "/assets/2017/gdrive2.png",
+      "/assets/2017/gdrive3.png",
+      "/assets/2017/gdrive4.png",
+      "/assets/2017/gdrive5.png",
+      "/assets/2017/gdrive6.png"
+    ]
+  },
+  {
+    "path": "2020/07/07/kinect-on-jetson-board/index.html",
+    "headings": [
+      {
+        "id": "jetcam-python-module-nvidia",
+        "text": "JetCam python module (Nvidia)"
+      },
+      {
+        "id": "check-opencv-build-information",
+        "text": "Check OpenCV build information"
+      },
+      {
+        "id": "use-jetcam-from-a-docker-container",
+        "text": "Use JetCam from a docker container"
+      },
+      {
+        "id": "python-wrapper-of-kinect-sensor-sdk",
+        "text": "Python Wrapper of Kinect Sensor SDK"
+      },
+      {
+        "id": "setup-torch-and-torchvision",
+        "text": "Setup torch and torchvision"
+      },
+      {
+        "id": "install-jupyterlab",
+        "text": "Install JupyterLab"
+      },
+      {
+        "id": "comments",
+        "text": "Comments"
+      }
+    ],
+    "assets": []
+  }
+]

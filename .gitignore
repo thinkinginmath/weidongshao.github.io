@@ -3,4 +3,11 @@
 /.emacs.desktop
 /.emacs.desktop.lock
 .DS_Store
-
+node_modules/
+dist/
+.astro/
+.generated-public/
+.bundle/
+_site/
+.jekyll-cache/
+.sass-cache/

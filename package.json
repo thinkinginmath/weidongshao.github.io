@@ -1,0 +1,21 @@
+{
+  "name": "uubright-website",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "prepare:static": "node scripts/prepare-static.mjs",
+    "dev": "npm run prepare:static && astro dev",
+    "build": "npm run prepare:static && astro build && node scripts/finalize-build.mjs && node scripts/check-built-site.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.4.5",
+    "katex": "0.19.1",
+    "markdown-it": "15.0.3",
+    "sass": "1.107.1",
+    "yaml": "2.9.1"
+  }
+}

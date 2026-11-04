@@ -1,0 +1,22 @@
+---
+const { title, url, description = 'Random notes on software and technology', math = false } = Astro.props;
+const nav = [['Home','/'],['Categories','/category/'],['Tags','/tag/'],['Quick Links','/quicklinks/'],['About','/about/']];
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title} | David Wei Shao</title><meta name="description" content={description} />
+<link rel="canonical" href={new URL(url, 'https://uubright.com')} />
+<link rel="icon" href="/favicon.ico" /><link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+{math && <link rel="stylesheet" href="/assets/katex/katex.min.css" />}
+<link rel="stylesheet" href="/css/astro-blog.css" />
+<link rel="alternate" type="application/rss+xml" href="/feed.xml" title="David Wei Shao" />
+</head><body>
+<header id="top"><div class="wrapper"><a href="/" class="brand">David Wei Shao</a><small>misc notes</small><button id="headerMenu" class="menu" aria-label="Menu"><i class="fa fa-bars"></i></button><nav id="headerNav"><ul>{nav.map(([name,href])=><li><a class:list={{active:url===href}} href={href}>{name}</a></li>)}</ul></nav></div></header>
+<slot />
+<footer class="site-footer"><div class="wrapper"><p class="description">random blogs on software and related tech</p><p class="contact">Contact me at: <a href="https://github.com/weidongshao">GitHub</a> · <a href="mailto:weidongshao@gmail.com">Email</a></p><p class="power">Built with <a href="https://astro.build/">Astro</a> · hosted on GitHub Pages. Original theme by <a href="https://github.com/Gaohaoyang">HyG</a>.</p></div></footer>
+<div class="back-to-top"><a href="#top" aria-label="Back to top">↑</a></div>
+<script is:inline src="/js/main.js"></script>
+<script is:inline src="/js/smooth-scroll.min.js"></script>
+<script is:inline>if(window.smoothScroll) smoothScroll.init({speed:500,easing:'easeInOutCubic',offset:20});</script>
+</body></html>
