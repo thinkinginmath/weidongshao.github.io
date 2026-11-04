@@ -1,0 +1,7 @@
+---
+import Blog from '../layouts/Blog.astro';
+import Taxonomy from '../components/Taxonomy.astro';
+import { groups } from '../lib/content.js';
+const categories = groups('categories');
+---
+<Blog title="Categories" url="/category/"><div class="page clearfix"><div class="left"><h1>Categories</h1>{categories.map(group=><section><h2 id={group.name}>{group.name}</h2><ul>{group.posts.map(post=><li><time>{post.date}</time> <a href={post.url}>{post.title}</a> <Taxonomy post={post}/></li>)}</ul></section>)}</div></div></Blog>

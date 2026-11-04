@@ -1,0 +1,5 @@
+---
+const { post } = Astro.props;
+---
+<span class="categories">{post.categories.map(name => <a href={`/category/#${encodeURIComponent(name)}`} rel="category">{name} </a>)}</span>
+<span class="pageTag">{post.tags.map(name => <a href={`/tag/#${encodeURIComponent(name)}`} rel="tag">{name} </a>)}</span>

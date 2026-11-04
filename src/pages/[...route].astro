@@ -1,0 +1,18 @@
+---
+import Blog from '../layouts/Blog.astro';
+import Taxonomy from '../components/Taxonomy.astro';
+import { posts, pages } from '../lib/content.js';
+export function getStaticPaths() {
+  return [...posts.map((post, index) => ({ params: { route: post.url.slice(1,-1) }, props: { post, previous: posts[index+1], next: posts[index-1] } })),
+    ...pages.map(post => ({ params: { route: post.url.slice(1,-1) }, props: { post } }))];
+}
+const { post, previous, next } = Astro.props;
+---
+<Blog title={post.title} url={post.url} math={post.mathjax || post.html.includes('class="katex')}>
+<div class="page clearfix" post><div class="left"><h1>{post.title}</h1>
+{post.date && <div class="label"><div class="label-card">{post.date}</div><div class="label-card">{post.author}</div><div class="label-card"><Taxonomy post={post} /></div></div>}
+<hr /><article itemscope itemtype="https://schema.org/BlogPosting"><ul id="markdown-toc">{post.headings.map(h=><li><a href={`#${h.id}`}>{h.text}</a></li>)}</ul><Fragment set:html={post.html} /></article>
+{post.date && <><hr /><div class="post-recent"><div class="pre">{previous && <a href={previous.url}>Prev: {previous.title}</a>}</div><div class="nex">{next && <a href={next.url}>Next: {next.title}</a>}</div></div><h2 id="comments">Comments</h2><div id="disqus_thread"></div><script is:inline define:vars={{canonical:`https://uubright.com${post.url}`}}>var disqus_config=function(){this.page.url=canonical;this.page.identifier=canonical;};var s=document.createElement('script');s.src='https://david-wei-blog.disqus.com/embed.js';s.async=true;document.body.appendChild(s);</script></>}
+</div><button class="anchor" aria-label="Table of contents"><i class="fa fa-anchor"></i></button><div class="right"><div class="wrap"><div class="side content"><div>Content</div><ul id="content-side" class="content-ul"></ul></div></div></div></div>
+<script is:inline src="/js/pageContent.js"></script>
+</Blog>

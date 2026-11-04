@@ -1,0 +1,9 @@
+/* Preserve the original blog theme while containing math/code on small screens. */
+.page .left { min-width: 0; }
+article { overflow-wrap: anywhere; }
+article img, article iframe { max-width: 100%; }
+article pre { max-width: 100%; overflow-x: auto; }
+article .katex { display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+article .katex-display { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding-block: .3em; }
+article table { display: block; max-width: 100%; overflow-x: auto; }
+.embed-container iframe { width: 100%; aspect-ratio: 800 / 460; height: auto; }
