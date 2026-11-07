@@ -64,3 +64,7 @@ The product direction is to free Mac space with a verified library on a Photo Dr
 
 - [Organize and back up safely](https://photos.uubright.com/guides/organize-and-backup/): public build-80 instructions and a separately labeled next-beta workflow preview. The next-beta ordinary-folder backup wizard has two steps, source and copy/verify; it does not require phone import.
 - A small five-HEIC (2.8 MB) local Mac copy/backup/receipt-check run passed with unchanged originals. Both copies were on the same disk. Separate-drive restore, interruption/reconnect, full phone and large Takeout acceptance remain open. The development test app is ad-hoc signed, not a new public-release artifact. Keep build 80 as the advertised download until a new signed/notarized candidate is published.
+
+## November 8, 2026 current-download clarity
+
+Homepage imagery is the actual build-80 library with credited public-domain sample photos. The synthetic Space-report savings image is no longer used in the pitch; the Space report is explicitly next beta. Source availability is labeled individually. “View Mac download” opens the download page, and “Open release-updates email” opens a mailto request. Build 80 remains free; no Pro purchase, founding price or automatic email signup is offered. No customer testimonial is invented. Product facts has one last-checked date; historical release and test dates retain their own labels.
