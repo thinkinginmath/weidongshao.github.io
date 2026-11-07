@@ -38,3 +38,6 @@
 
 /* Guide contents remain visible and wrap independently of the compact site header. */
 .guide-toc{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:14px;margin:28px 0}.guide-toc a{display:inline-block}@media(max-width:760px){header nav{flex-wrap:wrap;justify-content:flex-end;gap:6px 14px;max-width:52%}}
+
+/* Make source availability visible beside each import path. */
+.source-status-list{margin:28px 0 36px;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}.source-status-list>div{padding:18px 0;border-top:1px solid var(--line)}.source-status-list dt{font-weight:650;font-size:18px}.source-status-list dd{margin:8px 0 0;color:var(--muted)}.source-status-list .badge{display:table;margin-bottom:8px}.privacy-summary{padding:18px 24px;border-left:3px solid #b8bad5;background:#f9f9ff;border-radius:0 12px 12px 0;margin:24px 0}.privacy-summary p{margin:8px 0}@media(max-width:760px){.source-status-list{grid-template-columns:1fr}.privacy-summary{padding:14px 18px}}
