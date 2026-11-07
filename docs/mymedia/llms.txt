@@ -59,3 +59,8 @@
 ## November 4, 2026 roadmap update
 
 The product direction is to free Mac space with a verified library on a Photo Drive. Build 80 remains the public download; do not describe development features as included in it. Merged development work includes the post-scan Space report, selected low-disk write guards, cross-drive organize copy/verify/Trash, and journal-based History receipts with CSV export. Mac packaged acceptance is pending. A receipt says “Nothing lost” only for a finished, trusted step with a recorded outcome for every file and none needing attention. Broader low-disk coverage, cache relocation, a guaranteed 3% footprint, video duplicate cleanup and Pro licensing remain incomplete. No $49/$29 offer or 5 GB free-tier limit is live. The site targets December 3 for launch; it is not a release guarantee.
+
+## November 7, 2026 workflow guide
+
+- [Organize and back up safely](https://photos.uubright.com/guides/organize-and-backup/): public build-80 instructions and a separately labeled next-beta workflow preview. The next-beta ordinary-folder backup wizard has two steps, source and copy/verify; it does not require phone import.
+- A small five-HEIC (2.8 MB) local Mac copy/backup/receipt-check run passed with unchanged originals. Both copies were on the same disk. Separate-drive restore, interruption/reconnect, full phone and large Takeout acceptance remain open. The development test app is ad-hoc signed, not a new public-release artifact. Keep build 80 as the advertised download until a new signed/notarized candidate is published.
