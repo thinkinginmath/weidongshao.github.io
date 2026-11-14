@@ -12,7 +12,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "7.4.5",
+    "astro": "7.4.7",
     "katex": "0.19.1",
     "markdown-it": "15.0.3",
     "sass": "1.107.1",
